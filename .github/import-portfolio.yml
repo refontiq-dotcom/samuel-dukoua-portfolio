@@ -1,0 +1,30 @@
+name: Import portfolio source
+on:
+  push:
+    branches: [main]
+    paths:
+      - portfolio-source.tar.gz
+      - .github/workflows/import-portfolio.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  import-source:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Extract application source
+        run: |
+          mkdir -p /tmp/portfolio-source
+          tar -xzf portfolio-source.tar.gz -C /tmp/portfolio-source
+          cp -a /tmp/portfolio-source/samuel-dukoua-portfolio/. .
+          rm portfolio-source.tar.gz
+      - name: Commit application files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if ! git diff --cached --quiet; then
+            git commit -m "feat: add bilingual professional portfolio"
+            git push
+          fi
