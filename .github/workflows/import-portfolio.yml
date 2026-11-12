@@ -2,6 +2,8 @@ name: Import portfolio source
 on:
   push:
     branches: [main]
+    paths:
+      - portfolio-source.tar.gz
   workflow_dispatch:
 permissions:
   contents: write
