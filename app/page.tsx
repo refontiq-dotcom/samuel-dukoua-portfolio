@@ -35,6 +35,8 @@ const copy = {
     contactDesc: 'Je suis ouvert aux opportunités en entreprise, au télétravail et aux missions freelance en Côte d’Ivoire, en Afrique et à l’international.',
     email: 'M’écrire', footer: 'Conçu avec intention. Développé avec passion.', rights: 'Tous droits réservés.',
     cvDownload: 'Télécharger mon CV', cvOther: 'Version anglaise', location: 'Côte d’Ivoire · Ouvert à l’international',
+    experienceTitle: 'Expériences professionnelles',
+    experienceDesc: 'Opérateur de vidéosurveillance — SOLIBRA (2023–2025), PULLMAN Hôtel (2018–2020) et FILTISAC (2017–2018) · Chef d’équipe — Unilever Côte d’Ivoire (2021–2022).',
     projectNames: ['Séjoura', 'Trouvetou', 'Schooly', 'Refontiq Control Center', 'TechPilot', 'Transora'],
     projectDescriptions: [
       'Solution SaaS de gestion pour résidences meublées : organisation des établissements, chambres et réservations.',
@@ -74,6 +76,8 @@ const copy = {
     contactDesc: 'Open to employment, remote work and freelance opportunities in Côte d’Ivoire, across Africa and internationally.',
     email: 'Send me an email', footer: 'Designed with intent. Built with passion.', rights: 'All rights reserved.',
     cvDownload: 'Download my resume', cvOther: 'French version', location: 'Côte d’Ivoire · Open to international opportunities',
+    experienceTitle: 'Professional experience',
+    experienceDesc: 'Video surveillance operator — SOLIBRA (2023–2025), PULLMAN Hotel (2018–2020) and FILTISAC (2017–2018) · Team leader — Unilever Côte d’Ivoire (2021–2022).',
     projectNames: ['Séjoura', 'Trouvetou', 'Schooly', 'Refontiq Control Center', 'TechPilot', 'Transora'],
     projectDescriptions: [
       'SaaS solution for furnished residence management, including property, room and reservation workflows.',
