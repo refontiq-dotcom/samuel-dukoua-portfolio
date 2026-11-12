@@ -34,7 +34,7 @@ const copy = {
     contactTag: 'ET SI NOUS CONSTRUISIONS QUELQUE CHOSE ?', contactTitle: 'Parlons de votre prochain projet.',
     contactDesc: 'Je suis ouvert aux opportunités en entreprise, au télétravail et aux missions freelance en Côte d’Ivoire, en Afrique et à l’international.',
     email: 'M’écrire', footer: 'Conçu avec intention. Développé avec passion.', rights: 'Tous droits réservés.',
-    cv: 'CV bientôt disponible', location: 'Côte d’Ivoire · Ouvert à l’international',
+    cvDownload: 'Télécharger mon CV', cvOther: 'Version anglaise', location: 'Côte d’Ivoire · Ouvert à l’international',
     projectNames: ['Séjoura', 'Trouvetou', 'Schooly', 'Refontiq Control Center', 'TechPilot', 'Transora'],
     projectDescriptions: [
       'Solution SaaS de gestion pour résidences meublées : organisation des établissements, chambres et réservations.',
@@ -73,7 +73,7 @@ const copy = {
     contactTag: 'LET’S BUILD SOMETHING', contactTitle: 'Let’s talk about your next project.',
     contactDesc: 'Open to employment, remote work and freelance opportunities in Côte d’Ivoire, across Africa and internationally.',
     email: 'Send me an email', footer: 'Designed with intent. Built with passion.', rights: 'All rights reserved.',
-    cv: 'Resume coming soon', location: 'Côte d’Ivoire · Open to international opportunities',
+    cvDownload: 'Download my resume', cvOther: 'French version', location: 'Côte d’Ivoire · Open to international opportunities',
     projectNames: ['Séjoura', 'Trouvetou', 'Schooly', 'Refontiq Control Center', 'TechPilot', 'Transora'],
     projectDescriptions: [
       'SaaS solution for furnished residence management, including property, room and reservation workflows.',
@@ -125,6 +125,10 @@ export default function Home() {
           <div className="hero-actions">
             <a className="button-primary" href="#projects">{t.cta} <ArrowUpRight size={17}/></a>
             <a className="button-quiet" href="#contact">{t.contact}</a>
+            <div className="cv-actions">
+              <a className="cv-link" href={lang === 'fr' ? '/CV-Samuel-Dukoua-FR.pdf' : '/Resume-Samuel-Dukoua-EN.pdf'} download>{t.cvDownload} <ArrowDown size={14}/></a>
+              <a className="cv-other" href={lang === 'fr' ? '/Resume-Samuel-Dukoua-EN.pdf' : '/CV-Samuel-Dukoua-FR.pdf'} download>{t.cvOther}</a>
+            </div>
           </div>
           <div className="availability"><span/> {t.available}</div>
         </div>
