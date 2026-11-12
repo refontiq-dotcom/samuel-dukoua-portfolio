@@ -1,8 +1,8 @@
 # Portfolio — Dukoua Nguessan Samuel Junior
 
-Portfolio professionnel bilingue (français / anglais), construit avec Next.js, React et TypeScript.
+Portfolio personnel bilingue (français / anglais), construit avec Next.js, React et TypeScript.
 
-## Lancer en local
+## Démarrer en local
 
 ```bash
 npm install
@@ -13,11 +13,14 @@ Ouvrir http://localhost:3000.
 
 ## Avant publication
 
-- Remplacer `https://example.com` dans `app/layout.tsx` par le domaine définitif.
-- Ajouter le portrait original de Samuel dans `public/`, sans retouche des traits du visage.
-- Remplacer les visuels abstraits temporaires par des captures réelles des projets, après vérification.
-- Vérifier les descriptions et l'état d'avancement de chaque projet.
-- Ajouter le CV PDF lorsqu'il sera prêt.
-- Exécuter `npm run build` et `npm run lint`.
+- Remplacer le domaine `example.com` dans `app/layout.tsx` par le domaine définitif.
+- Ajouter le portrait original de Samuel dans `public/` puis intégrer sa photo dans le hero sans retoucher ses traits.
+- Remplacer les visuels abstraits des cartes par des captures réelles des applications, après sélection et vérification.
+- Vérifier les descriptions et le statut d'avancement de chaque projet.
+- Préparer puis intégrer le CV PDF.
+- Effectuer les tests `npm run build` et `npm run lint`.
+- Configurer le dépôt GitHub public et l'hébergement uniquement après validation de la destination.
 
-Le début de l'apprentissage du développement web en 2015 ne constitue pas une déclaration d'expérience professionnelle depuis cette date. Les projets en cours ou en conception sont indiqués comme tels.
+## Garde-fous éditoriaux
+
+Le début d'apprentissage en 2015 ne constitue pas une affirmation d'emploi ou d'expérience professionnelle depuis 2015. Les projets en conception ou en développement ne doivent pas être présentés comme des produits achevés. Les illustrations abstraites actuelles sont des éléments provisoires de mise en page, pas des captures de produits.
