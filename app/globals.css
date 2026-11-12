@@ -21,3 +21,9 @@
 .portrait-stamp strong{font-size:24px;line-height:1;color:#f4f8ff;letter-spacing:-1px}
 .portrait-stamp small{font-size:7px}
 @media(max-width:680px){.hero-portrait-art{height:430px;margin:32px -3vw 0;transform:none}.portrait-backplate{width:min(290px,74vw);height:380px}.portrait-halo-one{width:350px;height:350px}.portrait-halo-two{width:390px;height:300px}.portrait-caption{left:0;bottom:0}.portrait-caption span{font-size:8px}.portrait-stamp{right:0;top:7%}}
+
+.cv-actions{display:flex;align-items:center;gap:13px;flex-wrap:wrap;margin-top:19px}
+.cv-link{display:inline-flex;align-items:center;gap:8px;font:10px var(--mono);letter-spacing:.3px;color:#dcecff;border-bottom:1px solid rgba(85,217,237,.55);padding:0 0 6px}
+.cv-link svg{color:var(--cyan)}
+.cv-other{font:9px var(--mono);color:#8195b0;text-decoration:underline;text-decoration-color:#438dff66;text-underline-offset:4px}
+.cv-link:hover,.cv-other:hover{color:var(--cyan)}
