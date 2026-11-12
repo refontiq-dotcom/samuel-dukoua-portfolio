@@ -2,9 +2,6 @@ name: Import portfolio source
 on:
   push:
     branches: [main]
-    paths:
-      - portfolio-source.tar.gz
-      - .github/workflows/import-portfolio.yml
   workflow_dispatch:
 permissions:
   contents: write
