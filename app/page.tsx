@@ -142,8 +142,20 @@ export default function Home() {
           <div className="portrait-backplate">
             <Image src="/samuel-dukoua.jpg" alt="Portrait de Dukoua Nguessan Samuel Junior" width={420} height={560} priority className="portrait-image"/>
           </div>
-          <div className="portrait-caption"><span>DUKOUA NGUESSAN SAMUEL JUNIOR</span><small>FULL-STACK WEB DEVELOPER</small></div>
-          <div className="portrait-stamp"><strong>2015</strong><small>LEARNING & BUILDING</small></div>
+          <div className="tech-orbit orbit-ring-a" aria-hidden="true" />
+          <div className="tech-orbit orbit-ring-b" aria-hidden="true" />
+          <div className="tech-orbit orbit-ring-c" aria-hidden="true" />
+          <div className="tech-float tech-html"><b>5</b><span>HTML</span></div>
+          <div className="tech-float tech-css"><b>✳</b><span>CSS</span></div>
+          <div className="tech-float tech-js"><b>JS</b><span>JavaScript</span></div>
+          <div className="tech-float tech-ts"><b>TS</b><span>TypeScript</span></div>
+          <div className="tech-float tech-react"><b>◉</b><span>React</span></div>
+          <div className="tech-float tech-next"><b>N</b><span>Next.js</span></div>
+          <div className="tech-float tech-node"><b>⬡</b><span>Node.js</span></div>
+          <div className="tech-float tech-db"><b>▤</b><span>PostgreSQL</span></div>
+          <div className="tech-float tech-supa"><b>◈</b><span>Supabase</span></div>
+          <div className="tech-float tech-git"><b>⌘</b><span>Git</span></div>
+          <div className="portrait-caption"><span>DUKOUA NGUESSAN SAMUEL JUNIOR</span><small>FULL-STACK WEB DEVELOPER · SINCE 2015</small></div>
         </div>
         <a className="scroll-hint" href="#about"><ArrowDown size={14}/> {t.scroll}</a>
         <div className="hero-index">01 / 06</div>
