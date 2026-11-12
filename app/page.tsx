@@ -1,6 +1,7 @@
 'use client';
 
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
+import Image from 'next/image';
 import { ArrowDown, ArrowUpRight, Github, Linkedin, Mail, Menu, X, Code2, Layers3, Sparkles, Globe2 } from 'lucide-react';
 
 type Lang = 'fr' | 'en';
@@ -99,6 +100,7 @@ export default function Home() {
   const [lang, setLang] = useState<Lang>('fr');
   const [menuOpen, setMenuOpen] = useState(false);
   const t = copy[lang];
+  useEffect(() => { document.documentElement.lang = lang; }, [lang]);
   const navIds = ['home', 'about', 'projects', 'skills', 'journey', 'contact'];
   const projectList = useMemo(() => projects.map((p, i) => ({ ...p, name: t.projectNames[i], description: t.projectDescriptions[i], status: t.projectStatus[i] })), [t]);
   return (
@@ -126,12 +128,14 @@ export default function Home() {
           </div>
           <div className="availability"><span/> {t.available}</div>
         </div>
-        <div className="hero-art" aria-label="Abstract digital network illustration">
-          <div className="orbit orbit-one"/><div className="orbit orbit-two"/><div className="orbit orbit-three"/>
-          <div className="core"><Code2 size={62} strokeWidth={1.15}/><small>BUILD / CREATE</small></div>
-          <span className="node node-a"/><span className="node node-b"/><span className="node node-c"/>
-          <div className="art-label label-a">IDEA <b>01</b></div><div className="art-label label-b">LOGIC <b>02</b></div><div className="art-label label-c">PRODUCT <b>03</b></div>
-          <div className="art-grid"/>
+        <div className="hero-art hero-portrait-art" aria-label="Portrait professionnel de Dukoua Nguessan Samuel Junior">
+          <div className="portrait-halo portrait-halo-one"/>
+          <div className="portrait-halo portrait-halo-two"/>
+          <div className="portrait-backplate">
+            <Image src="/samuel-dukoua.jpg" alt="Portrait de Dukoua Nguessan Samuel Junior" width={420} height={560} priority className="portrait-image"/>
+          </div>
+          <div className="portrait-caption"><span>DUKOUA NGUESSAN SAMUEL JUNIOR</span><small>FULL-STACK WEB DEVELOPER</small></div>
+          <div className="portrait-stamp"><strong>2015</strong><small>LEARNING & BUILDING</small></div>
         </div>
         <a className="scroll-hint" href="#about"><ArrowDown size={14}/> {t.scroll}</a>
         <div className="hero-index">01 / 06</div>
@@ -175,6 +179,7 @@ export default function Home() {
         <div className="section-kicker">{t.journeyTag}</div><h2>{t.journeyTitle}</h2>
         <div className="timeline">
           <div className="timeline-item"><span className="timeline-dot"/><div><div className="timeline-date">2015 — PRESENT</div><h3>{t.journeyStart}</h3><p>{t.journeyDesc}</p></div></div>
+          <div className="timeline-item"><span className="timeline-dot"/><div><div className="timeline-date">2017 — 2025</div><h3>{t.experienceTitle}</h3><p>{t.experienceDesc}</p></div></div>
           <div className="timeline-item"><span className="timeline-dot"/><div><div className="timeline-date">EDUCATION</div><h3>{t.education}</h3><p>{t.educationDesc}</p></div></div>
         </div>
       </section>
