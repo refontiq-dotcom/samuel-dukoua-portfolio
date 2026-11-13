@@ -23,10 +23,12 @@ const copy = {
     stack: 'Technologies et outils', details: 'Voir le dépôt GitHub',
     skillsTag: 'SAVOIR-FAIRE', skillsTitle: 'Des compétences au service du produit.',
     skillGroups: [
-      { title: 'Développement', items: ['JavaScript / TypeScript', 'React / Next.js', 'HTML / CSS', 'Node.js'] },
-      { title: 'Données & backend', items: ['Supabase', 'PostgreSQL', 'API & intégrations', 'Authentification'] },
-      { title: 'Conception produit', items: ['Architecture SaaS', 'UX orientée usage', 'Applications multi-tenant', 'Qualité & tests'] },
-      { title: 'Outils & IA', items: ['Git / GitHub', 'VS Code', 'Assistants IA de développement', 'Automatisation'] }
+      { title: 'Front-end', items: ['Angular', 'React / Next.js', 'Vue.js', 'HTML5 / CSS3', 'JavaScript / TypeScript'] },
+      { title: 'Back-end', items: ['Java / Spring Boot', '.NET', 'Node.js', 'Python'] },
+      { title: 'API & architecture', items: ['REST / SOAP', 'Microservices', 'Intégration de services', 'Architecture SaaS'] },
+      { title: 'Bases de données', items: ['Oracle', 'PostgreSQL / Supabase', 'SQL Server', 'MongoDB'] },
+      { title: 'DevOps & livraison', items: ['Git / GitHub', 'CI / CD', 'Docker', 'Kubernetes'] },
+      { title: 'Sécurité applicative', items: ['OAuth 2.0', 'JWT', 'Chiffrement', 'OWASP Top 10'] }
     ],
     journeyTag: 'PARCOURS', journeyTitle: 'Un apprentissage construit dans la durée.',
     journeyStart: '2015 — Début de mon apprentissage du développement web', journeyDesc: 'Apprentissage autonome, pratique personnelle et formations en ligne, notamment sur OpenClassrooms.',
@@ -64,10 +66,12 @@ const copy = {
     stack: 'Technologies & tools', details: 'View GitHub repository',
     skillsTag: 'CAPABILITIES', skillsTitle: 'Skills that serve the product.',
     skillGroups: [
-      { title: 'Development', items: ['JavaScript / TypeScript', 'React / Next.js', 'HTML / CSS', 'Node.js'] },
-      { title: 'Data & backend', items: ['Supabase', 'PostgreSQL', 'APIs & integrations', 'Authentication'] },
-      { title: 'Product design', items: ['SaaS architecture', 'User-focused UX', 'Multi-tenant apps', 'Quality & testing'] },
-      { title: 'Tools & AI', items: ['Git / GitHub', 'VS Code', 'AI coding assistants', 'Automation'] }
+      { title: 'Front-end', items: ['Angular', 'React / Next.js', 'Vue.js', 'HTML5 / CSS3', 'JavaScript / TypeScript'] },
+      { title: 'Back-end', items: ['Java / Spring Boot', '.NET', 'Node.js', 'Python'] },
+      { title: 'APIs & architecture', items: ['REST / SOAP', 'Microservices', 'Service integration', 'SaaS architecture'] },
+      { title: 'Databases', items: ['Oracle', 'PostgreSQL / Supabase', 'SQL Server', 'MongoDB'] },
+      { title: 'DevOps & delivery', items: ['Git / GitHub', 'CI / CD', 'Docker', 'Kubernetes'] },
+      { title: 'Application security', items: ['OAuth 2.0', 'JWT', 'Encryption', 'OWASP Top 10'] }
     ],
     journeyTag: 'JOURNEY', journeyTitle: 'A learning path built over time.',
     journeyStart: '2015 — Began learning web development', journeyDesc: 'Self-directed learning, hands-on practice and online training, including OpenClassrooms.',
