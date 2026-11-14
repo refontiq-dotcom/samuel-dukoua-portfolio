@@ -60,3 +60,10 @@
  .portrait-caption{left:-2%;bottom:0;padding:10px 11px}
 }
 @media(prefers-reduced-motion:reduce){.tech-float,.portrait-halo-one,.portrait-halo-two{animation:none!important}}
+
+
+/* Transora security case study */
+.project-security{margin:18px 0 16px;padding:13px 14px;border:1px solid rgba(85,217,237,.2);border-left:2px solid var(--cyan);border-radius:8px;background:rgba(13,27,43,.62)}
+.project-security strong{display:block;margin-bottom:9px;color:var(--cyan);font:10px var(--mono);letter-spacing:.55px;text-transform:uppercase}
+.project-security ul{display:grid;gap:7px;margin:0;padding-left:16px}
+.project-security li{color:#b9c8dc;font-size:10px;line-height:1.65}
