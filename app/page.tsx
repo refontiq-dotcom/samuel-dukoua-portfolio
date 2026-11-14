@@ -28,7 +28,7 @@ const copy = {
       { title: 'API & architecture', items: ['REST / SOAP', 'Microservices', 'Intégration de services', 'Architecture SaaS'] },
       { title: 'Bases de données', items: ['Oracle', 'PostgreSQL / Supabase', 'SQL Server', 'MongoDB'] },
       { title: 'DevOps & livraison', items: ['Git / GitHub', 'CI / CD', 'Docker', 'Kubernetes'] },
-      { title: 'Sécurité applicative', items: ['OAuth 2.0', 'JWT', 'Chiffrement', 'OWASP Top 10'] }
+      { title: 'Sécurité applicative', items: ['JWT HS256 et validation des claims', 'Sessions révocables et rotation des refresh tokens', 'Cookies HttpOnly / SameSite / Secure', 'CSP avec Helmet', 'Prévention XSS et validation des sorties', 'Logs structurés et masquage des données sensibles'] }
     ],
     journeyTag: 'PARCOURS', journeyTitle: 'Un apprentissage construit dans la durée.',
     journeyStart: '2015 — Début de mon apprentissage du développement web', journeyDesc: 'Apprentissage autonome, pratique personnelle et formations en ligne, notamment sur OpenClassrooms.',
@@ -46,8 +46,10 @@ const copy = {
       'Projet SaaS de gestion scolaire destiné aux établissements en Côte d’Ivoire et en Afrique de l’Ouest.',
       'Tableau de bord centralisé conçu pour superviser l’écosystème de produits Refontiq.',
       'Concept de plateforme métier pour les professionnels de l’électronique : diagnostic, suivi et opérations commerciales.',
-      'Projet de plateforme de gestion des opérations pour les entreprises de transport interurbain.'
+      'Plateforme de gestion des opérations de transport interurbain, avec un travail concret de renforcement de la sécurité applicative.'
     ],
+    transoraSecurityLabel: 'Sécurité applicative renforcée',
+    transoraSecurity: ['JWT stricts : HS256, émetteur, audience et expiration', 'Sessions révocables et rotation des refresh tokens stockés sous forme de hash', 'Cookies HttpOnly, SameSite Strict et Secure en production', 'CSP avec Helmet et protections ciblées contre les injections XSS', 'Journalisation Pino avec masquage des données sensibles, tests Vitest et CI'],
     projectStatus: ['Produit en développement', 'Produit en développement', 'Produit en développement', 'Outil interne en développement', 'Conception / développement', 'Conception / développement']
   },
   en: {
@@ -71,7 +73,7 @@ const copy = {
       { title: 'APIs & architecture', items: ['REST / SOAP', 'Microservices', 'Service integration', 'SaaS architecture'] },
       { title: 'Databases', items: ['Oracle', 'PostgreSQL / Supabase', 'SQL Server', 'MongoDB'] },
       { title: 'DevOps & delivery', items: ['Git / GitHub', 'CI / CD', 'Docker', 'Kubernetes'] },
-      { title: 'Application security', items: ['OAuth 2.0', 'JWT', 'Encryption', 'OWASP Top 10'] }
+      { title: 'Application security', items: ['JWT HS256 and claims validation', 'Revocable sessions and refresh-token rotation', 'HttpOnly / SameSite / Secure cookies', 'CSP with Helmet', 'XSS prevention and output validation', 'Structured logs and sensitive-data redaction'] }
     ],
     journeyTag: 'JOURNEY', journeyTitle: 'A learning path built over time.',
     journeyStart: '2015 — Began learning web development', journeyDesc: 'Self-directed learning, hands-on practice and online training, including OpenClassrooms.',
@@ -89,8 +91,10 @@ const copy = {
       'School management SaaS project designed for institutions in Côte d’Ivoire and West Africa.',
       'Centralized dashboard designed to oversee the Refontiq product ecosystem.',
       'Business platform concept for electronics professionals: diagnostics, tracking and commercial operations.',
-      'Platform project for managing operations in intercity transport companies.'
+      'Intercity transport operations platform, including hands-on application security hardening.'
     ],
+    transoraSecurityLabel: 'Application security hardening',
+    transoraSecurity: ['Strict JWT validation: HS256, issuer, audience and expiry', 'Revocable sessions and hashed refresh-token rotation', 'HttpOnly, SameSite Strict and Secure cookies in production', 'Helmet CSP and targeted XSS-injection safeguards', 'Pino logging with sensitive-data redaction, Vitest regression tests and CI'],
     projectStatus: ['In development', 'In development', 'In development', 'Internal tool in development', 'Design / development', 'Design / development']
   }
 };
@@ -101,7 +105,7 @@ const projects = [
   { key: 'schooly', repo: 'https://github.com/refontiq-dotcom/schooly', tags: ['Next.js', 'TypeScript', 'Supabase', 'Monorepo'] },
   { key: 'control', repo: 'https://github.com/refontiq-dotcom/refontiq-control-center', tags: ['Next.js', 'React', 'Supabase', 'TypeScript'] },
   { key: 'techpilot', repo: 'https://github.com/refontiq-dotcom/TechPilot', tags: ['Product design', 'Business workflows'] },
-  { key: 'transora', repo: 'https://github.com/refontiq-dotcom/Transora', tags: ['Product design', 'Transport SaaS'] }
+  { key: 'transora', repo: 'https://github.com/refontiq-dotcom/Transora', tags: ['Node.js', 'Express', 'TypeScript', 'PostgreSQL', 'JWT', 'Helmet', 'Pino', 'Vitest'] }
 ];
 
 export default function Home() {
@@ -187,6 +191,7 @@ export default function Home() {
             <div className="project-info">
               <div className="project-meta"><span>{p.status}</span><span>0{i+1}</span></div>
               <h3>{p.name}</h3><p>{p.description}</p>
+              {p.key === 'transora' && <div className="project-security"><strong>{t.transoraSecurityLabel}</strong><ul>{t.transoraSecurity.map((item) => <li key={item}>{item}</li>)}</ul></div>}
               <div className="tags">{p.tags.map(tag=><span key={tag}>{tag}</span>)}</div>
               <a className="repo-link" href={p.repo} target="_blank" rel="noreferrer">{t.details} <ArrowUpRight size={15}/></a>
             </div>
