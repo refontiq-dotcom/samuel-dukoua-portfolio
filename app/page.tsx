@@ -46,10 +46,12 @@ const copy = {
       'Projet SaaS de gestion scolaire destiné aux établissements en Côte d’Ivoire et en Afrique de l’Ouest.',
       'Tableau de bord centralisé conçu pour superviser l’écosystème de produits Refontiq.',
       'Concept de plateforme métier pour les professionnels de l’électronique : diagnostic, suivi et opérations commerciales.',
-      'Plateforme de gestion des opérations de transport interurbain, avec un travail concret de renforcement de la sécurité applicative.'
+      'Plateforme de gestion du transport interurbain, avec isolation multi-compagnies, réservation publique, billetterie QR, guichet et contrôle d’embarquement en cours de validation.'
     ],
     transoraSecurityLabel: 'Sécurité applicative renforcée',
     transoraSecurity: ['JWT stricts : HS256, émetteur, audience et expiration', 'Sessions révocables et rotation des refresh tokens stockés sous forme de hash', 'Cookies HttpOnly, SameSite Strict et Secure en production', 'CSP avec Helmet et protections ciblées contre les injections XSS', 'Limitation distribuée des tentatives de connexion et d’inscription avec Redis REST, compteurs Lua atomiques et clés IP hachées', 'Journalisation Pino avec masquage des données sensibles, tests Vitest et CI'],
+    transoraOperationsLabel: 'Fonctionnalités métier en cours de validation',
+    transoraOperations: ['Réservation publique propre à chaque compagnie, sans paiement en ligne à ce stade', 'QR code et code-barres générés dès la réservation, avec statut de règlement explicite', 'Isolation multi-tenant des billets, sièges, guichets et embarquements', 'Guichet transactionnel : ouverture, vente en espèces, rapprochement et clôture de caisse', 'Contrôle d’embarquement persistant : billets non réglés et doubles scans refusés', 'Tests Vitest et validation par CI GitHub Actions'],
     projectStatus: ['Produit en développement', 'Produit en développement', 'Produit en développement', 'Outil interne en développement', 'Conception / développement', 'Conception / développement']
   },
   en: {
@@ -91,10 +93,12 @@ const copy = {
       'School management SaaS project designed for institutions in Côte d’Ivoire and West Africa.',
       'Centralized dashboard designed to oversee the Refontiq product ecosystem.',
       'Business platform concept for electronics professionals: diagnostics, tracking and commercial operations.',
-      'Intercity transport operations platform, including hands-on application security hardening.'
+      'Intercity transport operations platform with multi-company isolation, public booking, QR ticketing, cashier workflows and boarding control under validation.'
     ],
     transoraSecurityLabel: 'Application security hardening',
     transoraSecurity: ['Strict JWT validation: HS256, issuer, audience and expiry', 'Revocable sessions and hashed refresh-token rotation', 'HttpOnly, SameSite Strict and Secure cookies in production', 'Helmet CSP and targeted XSS-injection safeguards', 'Distributed login and registration rate limiting with Redis REST, atomic Lua counters and hashed IP keys', 'Pino logging with sensitive-data redaction, Vitest regression tests and CI'],
+    transoraOperationsLabel: 'Business workflows under validation',
+    transoraOperations: ['Public booking flow scoped to each company; no online payment gateway at this stage', 'QR codes and barcodes generated at reservation time with explicit payment state', 'Multi-tenant isolation for tickets, seats, cashier sessions and boarding', 'Transactional cashier workflow: opening, cash sales, reconciliation and closing', 'Persistent boarding control: unpaid tickets and duplicate scans are rejected', 'Vitest coverage and GitHub Actions CI validation'],
     projectStatus: ['In development', 'In development', 'In development', 'Internal tool in development', 'Design / development', 'Design / development']
   }
 };
@@ -105,7 +109,7 @@ const projects = [
   { key: 'schooly', repo: 'https://github.com/refontiq-dotcom/schooly', tags: ['Next.js', 'TypeScript', 'Supabase', 'Monorepo'] },
   { key: 'control', repo: 'https://github.com/refontiq-dotcom/refontiq-control-center', tags: ['Next.js', 'React', 'Supabase', 'TypeScript'] },
   { key: 'techpilot', repo: 'https://github.com/refontiq-dotcom/TechPilot', tags: ['Product design', 'Business workflows'] },
-  { key: 'transora', repo: 'https://github.com/refontiq-dotcom/Transora', tags: ['Node.js', 'Express', 'TypeScript', 'PostgreSQL', 'JWT', 'Helmet', 'Pino', 'Redis REST', 'Lua', 'Vitest'] }
+  { key: 'transora', repo: 'https://github.com/refontiq-dotcom/Transora', tags: ['Node.js', 'Express', 'TypeScript', 'PostgreSQL', 'Multi-tenant', 'QR ticketing', 'JWT', 'Helmet', 'Pino', 'Redis REST', 'Lua', 'Vitest'] }
 ];
 
 export default function Home() {
@@ -191,7 +195,10 @@ export default function Home() {
             <div className="project-info">
               <div className="project-meta"><span>{p.status}</span><span>0{i+1}</span></div>
               <h3>{p.name}</h3><p>{p.description}</p>
-              {p.key === 'transora' && <div className="project-security"><strong>{t.transoraSecurityLabel}</strong><ul>{t.transoraSecurity.map((item) => <li key={item}>{item}</li>)}</ul></div>}
+              {p.key === 'transora' && <>
+                <div className="project-security"><strong>{t.transoraSecurityLabel}</strong><ul>{t.transoraSecurity.map((item) => <li key={item}>{item}</li>)}</ul></div>
+                <div className="project-security"><strong>{t.transoraOperationsLabel}</strong><ul>{t.transoraOperations.map((item) => <li key={item}>{item}</li>)}</ul></div>
+              </>}
               <div className="tags">{p.tags.map(tag=><span key={tag}>{tag}</span>)}</div>
               <a className="repo-link" href={p.repo} target="_blank" rel="noreferrer">{t.details} <ArrowUpRight size={15}/></a>
             </div>
