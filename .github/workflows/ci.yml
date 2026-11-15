@@ -8,7 +8,7 @@ on:
 permissions:
   contents: read
 jobs:
-  build:
+  quality:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -16,4 +16,9 @@ jobs:
         with:
           node-version: 22
       - run: npm install
-      - run: npm run build
+      - name: Lint
+        run: npm run lint
+      - name: Type check
+        run: npx tsc --noEmit
+      - name: Production build
+        run: npm run build
