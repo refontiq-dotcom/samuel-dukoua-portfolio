@@ -8,7 +8,7 @@ type Lang = 'fr' | 'en';
 
 const copy = {
   fr: {
-    nav: ['Accueil', 'À propos', 'Projets', 'Compétences', 'Parcours', 'Contact'],
+    nav: ['Accueil', 'À propos', 'Projets', 'Compétences', 'Méthode', 'Services', 'Parcours', 'Contact'],
     eyebrow: 'DÉVELOPPEUR WEB FULL-STACK',
     headline: <>Du concept au produit :<br /><span>je développe les solutions</span><br />de demain.</>,
     intro: 'Je conçois des applications web et des plateformes numériques pensées pour résoudre des problèmes concrets.',
@@ -23,12 +23,30 @@ const copy = {
     stack: 'Technologies et outils', details: 'Voir le dépôt GitHub',
     skillsTag: 'SAVOIR-FAIRE', skillsTitle: 'Des compétences au service du produit.',
     skillGroups: [
-      { title: 'Front-end', items: ['Angular', 'React / Next.js', 'Vue.js', 'HTML5 / CSS3', 'JavaScript / TypeScript'] },
-      { title: 'Back-end', items: ['Java / Spring Boot', '.NET', 'Node.js', 'Python'] },
-      { title: 'API & architecture', items: ['REST / SOAP', 'Microservices', 'Intégration de services', 'Architecture SaaS'] },
-      { title: 'Bases de données', items: ['Oracle', 'PostgreSQL / Supabase', 'SQL Server', 'MongoDB'] },
-      { title: 'DevOps & livraison', items: ['Git / GitHub', 'CI / CD', 'Docker', 'Kubernetes'] },
-      { title: 'Sécurité applicative', items: ['JWT HS256 et validation des claims', 'Sessions révocables et rotation des refresh tokens', 'Cookies HttpOnly / SameSite / Secure', 'CSP avec Helmet', 'Prévention XSS et validation des sorties', 'Logs structurés et masquage des données sensibles', 'Rate limiting partagé avec Redis REST et compteurs atomiques Lua'] }
+      { title: 'Développement front-end', items: ['React / Next.js', 'TypeScript / JavaScript', 'HTML5 / CSS3', 'Interfaces web responsive', 'Composants et parcours utilisateur'] },
+      { title: 'Développement back-end & API', items: ['Node.js / Express', 'API REST et documentation OpenAPI', 'Authentification et autorisations', 'Intégration de services', 'Logique métier'] },
+      { title: 'Architecture & données', items: ['Architecture SaaS multi-tenant', 'PostgreSQL / Supabase', 'Modélisation et migrations SQL', 'Isolation des données par organisation', 'Workflows métier transactionnels'] },
+      { title: 'Sécurité & qualité', items: ['JWT : signature, émetteur, audience et expiration', 'Sessions révocables et rotation des jetons', 'Cookies sécurisés et CSP avec Helmet', 'Chiffrement AES-256-GCM des identifiants sensibles', 'Rate limiting distribué avec Redis', 'Tests Vitest, ESLint et CI GitHub Actions'] },
+      { title: 'Outils & livraison', items: ['Git / GitHub et branches de fonctionnalité', 'Pull requests et revues de changements', 'Intégration continue', 'Vercel et environnements de déploiement', 'Diagnostic et correction de régressions'] },
+      { title: 'Technologies complémentaires abordées', items: ['Angular et Vue.js', 'Java / Spring Boot et .NET', 'Python', 'Oracle, SQL Server et MongoDB', 'SOAP et microservices', 'Docker et Kubernetes'] }
+    ],
+    methodsTag: 'APPROCHE DE TRAVAIL', methodsTitle: 'Une démarche structurée, du besoin à la livraison.',
+    methodsIntro: 'Je pars des usages métier, clarifie les règles, construis progressivement et vérifie les résultats avant toute livraison.',
+    methods: [
+      { title: 'Comprendre le besoin', description: 'Analyser les utilisateurs, les contraintes, les règles métier et les critères d’acceptation.' },
+      { title: 'Concevoir la solution', description: 'Définir les parcours, les données, les API, les rôles et les limites de sécurité.' },
+      { title: 'Développer par étapes', description: 'Découper le travail en changements ciblés, traçables et révisables dans Git.' },
+      { title: 'Tester et vérifier', description: 'Exécuter les contrôles disponibles, examiner les changements et corriger les régressions.' },
+      { title: 'Livrer avec prudence', description: 'Documenter les limites, distinguer préproduction et production et ne déployer qu’après validation.' }
+    ],
+    aiTitle: 'Développement assisté par IA, avec contrôle humain',
+    aiDescription: 'J’utilise des assistants et agents IA pour accélérer l’analyse et l’implémentation. Je garde la responsabilité du cadrage, de la revue du code, des tests et de la vérification des résultats : une proposition générée n’est pas considérée comme validée tant qu’elle n’a pas été contrôlée.',
+    servicesTag: 'CE QUE JE PEUX APPORTER', servicesTitle: 'Contribuer à des produits web utiles et fiables.',
+    services: [
+      { title: 'Applications web Full-Stack', description: 'Construire des interfaces et des fonctionnalités reliées à un backend et à une base de données.' },
+      { title: 'Plateformes SaaS', description: 'Concevoir des modules métier, des espaces par organisation et des parcours utilisateurs évolutifs.' },
+      { title: 'API & intégrations', description: 'Structurer des API, connecter des services et sécuriser les échanges entre applications.' },
+      { title: 'Fiabilisation applicative', description: 'Améliorer la sécurité, les tests, la traçabilité et les processus de livraison.' }
     ],
     journeyTag: 'PARCOURS', journeyTitle: 'Un apprentissage construit dans la durée.',
     journeyStart: '2015 — Début de mon apprentissage du développement web', journeyDesc: 'Apprentissage autonome, pratique personnelle et formations en ligne, notamment sur OpenClassrooms.',
@@ -46,16 +64,16 @@ const copy = {
       'Projet SaaS de gestion scolaire destiné aux établissements en Côte d’Ivoire et en Afrique de l’Ouest.',
       'Tableau de bord centralisé conçu pour superviser l’écosystème de produits Refontiq.',
       'Concept de plateforme métier pour les professionnels de l’électronique : diagnostic, suivi et opérations commerciales.',
-      'Plateforme de gestion du transport interurbain, avec isolation multi-compagnies, réservation publique, billetterie QR, guichet et contrôle d’embarquement en cours de validation.'
+      'Plateforme SaaS multi-compagnies pour le transport interurbain : réservations par segment, gestion des places, embarquement, absence et remboursements. Les intégrations de paiement en ligne ne sont pas encore activées.'
     ],
     transoraSecurityLabel: 'Sécurité applicative renforcée',
     transoraSecurity: ['JWT stricts : HS256, émetteur, audience et expiration', 'Sessions révocables et rotation des refresh tokens stockés sous forme de hash', 'Cookies HttpOnly, SameSite Strict et Secure en production', 'CSP avec Helmet et protections ciblées contre les injections XSS', 'Limitation distribuée des tentatives de connexion et d’inscription avec Redis REST, compteurs Lua atomiques et clés IP hachées', 'Journalisation Pino avec masquage des données sensibles, tests Vitest et CI'],
     transoraOperationsLabel: 'Fonctionnalités métier en cours de validation',
-    transoraOperations: ['Réservation publique propre à chaque compagnie, sans paiement en ligne à ce stade', 'QR code et code-barres générés dès la réservation, avec statut de règlement explicite', 'Isolation multi-tenant des billets, sièges, guichets et embarquements', 'Guichet transactionnel : ouverture, vente en espèces, rapprochement et clôture de caisse', 'Contrôle d’embarquement persistant : billets non réglés et doubles scans refusés', 'Tests Vitest et validation par CI GitHub Actions'],
+    transoraOperations: ['Réservations par segment de trajet et disponibilité des sièges selon les portions occupées', 'Blocage temporaire des places pendant 15 minutes avant confirmation du paiement', 'QR de billet émis après confirmation du règlement ; contrôle des billets et prévention des doubles scans', 'Embarquement et débarquement réels, avec suivi des places libérées', 'Règles d’absence propres à chaque compagnie, enregistrées avec la réservation et report soumis au consentement du voyageur', 'Workflow de remboursement : contrôle des remboursements espèces et traitement en attente pour les remboursements en ligne', 'Socle de paiement par compagnie conçu, mais fournisseurs de paiement et encaissement en production non activés', 'Fonctionnalités validées par tests Vitest et intégration continue sur les changements concernés'],
     projectStatus: ['Produit en développement', 'Produit en développement', 'Produit en développement', 'Outil interne en développement', 'Conception / développement', 'Conception / développement']
   },
   en: {
-    nav: ['Home', 'About', 'Projects', 'Skills', 'Journey', 'Contact'],
+    nav: ['Home', 'About', 'Projects', 'Skills', 'Approach', 'Services', 'Journey', 'Contact'],
     eyebrow: 'FULL-STACK WEB DEVELOPER',
     headline: <>From concept to product:<br /><span>I build the solutions</span><br />of tomorrow.</>,
     intro: 'I design web applications and digital platforms built to solve real-world problems.',
@@ -70,12 +88,30 @@ const copy = {
     stack: 'Technologies & tools', details: 'View GitHub repository',
     skillsTag: 'CAPABILITIES', skillsTitle: 'Skills that serve the product.',
     skillGroups: [
-      { title: 'Front-end', items: ['Angular', 'React / Next.js', 'Vue.js', 'HTML5 / CSS3', 'JavaScript / TypeScript'] },
-      { title: 'Back-end', items: ['Java / Spring Boot', '.NET', 'Node.js', 'Python'] },
-      { title: 'APIs & architecture', items: ['REST / SOAP', 'Microservices', 'Service integration', 'SaaS architecture'] },
-      { title: 'Databases', items: ['Oracle', 'PostgreSQL / Supabase', 'SQL Server', 'MongoDB'] },
-      { title: 'DevOps & delivery', items: ['Git / GitHub', 'CI / CD', 'Docker', 'Kubernetes'] },
-      { title: 'Application security', items: ['JWT HS256 and claims validation', 'Revocable sessions and refresh-token rotation', 'HttpOnly / SameSite / Secure cookies', 'CSP with Helmet', 'XSS prevention and output validation', 'Structured logs and sensitive-data redaction', 'Shared rate limiting with Redis REST and atomic Lua counters'] }
+      { title: 'Front-end development', items: ['React / Next.js', 'TypeScript / JavaScript', 'HTML5 / CSS3', 'Responsive web interfaces', 'Components and user journeys'] },
+      { title: 'Back-end development & APIs', items: ['Node.js / Express', 'REST APIs and OpenAPI documentation', 'Authentication and authorization', 'Service integration', 'Business logic'] },
+      { title: 'Architecture & data', items: ['Multi-tenant SaaS architecture', 'PostgreSQL / Supabase', 'SQL modelling and migrations', 'Organization-level data isolation', 'Transactional business workflows'] },
+      { title: 'Security & quality', items: ['JWT signature, issuer, audience and expiry validation', 'Revocable sessions and token rotation', 'Secure cookies and Helmet CSP', 'AES-256-GCM encryption for sensitive credentials', 'Distributed rate limiting with Redis', 'Vitest, ESLint and GitHub Actions CI'] },
+      { title: 'Tools & delivery', items: ['Git / GitHub and feature branches', 'Pull requests and change reviews', 'Continuous integration', 'Vercel and deployment environments', 'Debugging and regression fixes'] },
+      { title: 'Additional technologies explored', items: ['Angular and Vue.js', 'Java / Spring Boot and .NET', 'Python', 'Oracle, SQL Server and MongoDB', 'SOAP and microservices', 'Docker and Kubernetes'] }
+    ],
+    methodsTag: 'WORKING APPROACH', methodsTitle: 'A structured process, from requirements to delivery.',
+    methodsIntro: 'I start from real business needs, clarify the rules, build incrementally and verify outcomes before delivery.',
+    methods: [
+      { title: 'Understand the need', description: 'Analyse users, constraints, business rules and acceptance criteria.' },
+      { title: 'Design the solution', description: 'Define user journeys, data, APIs, roles and security boundaries.' },
+      { title: 'Build incrementally', description: 'Break work into focused, traceable and reviewable Git changes.' },
+      { title: 'Test and verify', description: 'Run available checks, inspect changes and fix regressions.' },
+      { title: 'Deliver carefully', description: 'Document limitations, distinguish staging from production and deploy only after approval.' }
+    ],
+    aiTitle: 'AI-assisted development with human oversight',
+    aiDescription: 'I use AI assistants and agents to accelerate analysis and implementation. I remain responsible for scoping, code review, testing and outcome verification: generated output is not considered validated until it has been checked.',
+    servicesTag: 'HOW I CAN CONTRIBUTE', servicesTitle: 'Building useful and reliable web products.',
+    services: [
+      { title: 'Full-Stack web applications', description: 'Build interfaces and features connected to back-end services and databases.' },
+      { title: 'SaaS platforms', description: 'Design business modules, organization workspaces and scalable user journeys.' },
+      { title: 'APIs & integrations', description: 'Structure APIs, connect services and secure application-to-application communication.' },
+      { title: 'Application reliability', description: 'Improve security, testing, traceability and delivery workflows.' }
     ],
     journeyTag: 'JOURNEY', journeyTitle: 'A learning path built over time.',
     journeyStart: '2015 — Began learning web development', journeyDesc: 'Self-directed learning, hands-on practice and online training, including OpenClassrooms.',
@@ -93,12 +129,12 @@ const copy = {
       'School management SaaS project designed for institutions in Côte d’Ivoire and West Africa.',
       'Centralized dashboard designed to oversee the Refontiq product ecosystem.',
       'Business platform concept for electronics professionals: diagnostics, tracking and commercial operations.',
-      'Intercity transport operations platform with multi-company isolation, public booking, QR ticketing, cashier workflows and boarding control under validation.'
+      'Multi-company SaaS platform for intercity transport: segment-based bookings, seat inventory, boarding, no-show and refund workflows. Online payment integrations are not yet enabled.'
     ],
     transoraSecurityLabel: 'Application security hardening',
     transoraSecurity: ['Strict JWT validation: HS256, issuer, audience and expiry', 'Revocable sessions and hashed refresh-token rotation', 'HttpOnly, SameSite Strict and Secure cookies in production', 'Helmet CSP and targeted XSS-injection safeguards', 'Distributed login and registration rate limiting with Redis REST, atomic Lua counters and hashed IP keys', 'Pino logging with sensitive-data redaction, Vitest regression tests and CI'],
     transoraOperationsLabel: 'Business workflows under validation',
-    transoraOperations: ['Public booking flow scoped to each company; no online payment gateway at this stage', 'QR codes and barcodes generated at reservation time with explicit payment state', 'Multi-tenant isolation for tickets, seats, cashier sessions and boarding', 'Transactional cashier workflow: opening, cash sales, reconciliation and closing', 'Persistent boarding control: unpaid tickets and duplicate scans are rejected', 'Vitest coverage and GitHub Actions CI validation'],
+    transoraOperations: ['Route-segment reservations and seat availability based on occupied journey sections', '15-minute temporary seat holds before payment confirmation', 'Ticket QR issued after payment confirmation, with ticket validation and duplicate-scan prevention', 'Actual boarding and alighting events, including released-seat tracking', 'Company-specific no-show policies stored with each booking; rebooking requires passenger consent', 'Refund workflow: controlled cash refunds and online refunds pending provider confirmation', 'Company-specific payment foundation designed, but payment providers and live collection are not enabled', 'Features validated through Vitest and continuous integration on the relevant changes'],
     projectStatus: ['In development', 'In development', 'In development', 'Internal tool in development', 'Design / development', 'Design / development']
   }
 };
@@ -117,7 +153,7 @@ export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
   const t = copy[lang];
   useEffect(() => { document.documentElement.lang = lang; }, [lang]);
-  const navIds = ['home', 'about', 'projects', 'skills', 'journey', 'contact'];
+  const navIds = ['home', 'about', 'projects', 'skills', 'method', 'services', 'journey', 'contact'];
   const projectList = useMemo(() => projects.map((p, i) => ({ ...p, name: t.projectNames[i], description: t.projectDescriptions[i], status: t.projectStatus[i] })), [t]);
   return (
     <main>
@@ -209,6 +245,18 @@ export default function Home() {
       <section className="section-wrap skills-section" id="skills">
         <div className="section-kicker">{t.skillsTag}</div><h2>{t.skillsTitle}</h2>
         <div className="skills-grid">{t.skillGroups.map((g,i)=><article className="skill-card" key={g.title}><div className="skill-num">0{i+1}</div><h3>{g.title}</h3><ul>{g.items.map(x=><li key={x}>{x}</li>)}</ul></article>)}</div>
+      </section>
+
+      <section className="section-wrap method-section" id="method">
+        <div className="section-kicker">{t.methodsTag}</div>
+        <div className="section-heading"><h2>{t.methodsTitle}</h2><p>{t.methodsIntro}</p></div>
+        <div className="method-grid">{t.methods.map((item, i) => <article className="method-card" key={item.title}><span className="skill-num">0{i + 1}</span><h3>{item.title}</h3><p>{item.description}</p></article>)}</div>
+        <div className="ai-practice"><div className="section-kicker">{t.aiTitle}</div><p>{t.aiDescription}</p></div>
+      </section>
+
+      <section className="section-wrap services-section" id="services">
+        <div className="section-kicker">{t.servicesTag}</div><h2>{t.servicesTitle}</h2>
+        <div className="services-grid">{t.services.map((item, i) => <article className="service-card" key={item.title}><span className="skill-num">0{i + 1}</span><h3>{item.title}</h3><p>{item.description}</p></article>)}</div>
       </section>
 
       <section className="section-wrap journey-section" id="journey">
