@@ -39,8 +39,8 @@ const copy = {
       { title: 'Tester et vérifier', description: 'Exécuter les contrôles disponibles, examiner les changements et corriger les régressions.' },
       { title: 'Livrer avec prudence', description: 'Documenter les limites, distinguer préproduction et production et ne déployer qu’après validation.' }
     ],
-    aiTitle: 'Développement assisté par IA, avec contrôle humain',
-    aiDescription: 'J’utilise des assistants et agents IA pour accélérer l’analyse et l’implémentation. Je garde la responsabilité du cadrage, de la revue du code, des tests et de la vérification des résultats : une proposition générée n’est pas considérée comme validée tant qu’elle n’a pas été contrôlée.',
+    aiTitle: 'De l’analyse à la réalisation',
+    aiDescription: 'Je conçois et développe des applications web de bout en bout. Je prends en charge l’analyse des besoins, les choix techniques, l’architecture, l’implémentation, les tests et l’amélioration continue. Je m’appuie sur des outils modernes d’assistance et de recherche pour approfondir mes connaissances, accélérer certaines tâches et renforcer la qualité de mes solutions.',
     servicesTag: 'CE QUE JE PEUX APPORTER', servicesTitle: 'Contribuer à des produits web utiles et fiables.',
     services: [
       { title: 'Applications web Full-Stack', description: 'Construire des interfaces et des fonctionnalités reliées à un backend et à une base de données.' },
@@ -104,8 +104,8 @@ const copy = {
       { title: 'Test and verify', description: 'Run available checks, inspect changes and fix regressions.' },
       { title: 'Deliver carefully', description: 'Document limitations, distinguish staging from production and deploy only after approval.' }
     ],
-    aiTitle: 'AI-assisted development with human oversight',
-    aiDescription: 'I use AI assistants and agents to accelerate analysis and implementation. I remain responsible for scoping, code review, testing and outcome verification: generated output is not considered validated until it has been checked.',
+    aiTitle: 'From analysis to implementation',
+    aiDescription: 'I design and develop end-to-end web applications. I take ownership of requirements analysis, technical decisions, architecture, implementation, testing and continuous improvement. I also use modern research and assistance tools to deepen my knowledge, accelerate selected tasks and improve the quality of my solutions.',
     servicesTag: 'HOW I CAN CONTRIBUTE', servicesTitle: 'Building useful and reliable web products.',
     services: [
       { title: 'Full-Stack web applications', description: 'Build interfaces and features connected to back-end services and databases.' },
