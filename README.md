@@ -4,7 +4,9 @@ Portfolio professionnel bilingue (français par défaut / anglais), construit av
 
 ## Positionnement
 
-Développeur Web Full-Stack orienté conception de solutions SaaS, API, architecture applicative et intégrations assistées par IA.
+Développeur Web Full-Stack : conception et développement d'applications web, solutions SaaS, API, architecture applicative et intégrations.
+
+Je prends en charge l'analyse des besoins, les choix techniques, l'implémentation, les tests et l'amélioration continue. Les outils de recherche et d'assistance peuvent soutenir certaines étapes, mais les décisions, la réalisation et la vérification du travail restent sous ma responsabilité.
 
 Le portfolio distingue :
 - les compétences mises en pratique dans les projets ;
