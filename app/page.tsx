@@ -193,16 +193,16 @@ export default function Home() {
           <div className="tech-orbit orbit-ring-a" aria-hidden="true" />
           <div className="tech-orbit orbit-ring-b" aria-hidden="true" />
           <div className="tech-orbit orbit-ring-c" aria-hidden="true" />
-          <div className="tech-float tech-html"><b>5</b><span>HTML</span></div>
-          <div className="tech-float tech-css"><b>✳</b><span>CSS</span></div>
-          <div className="tech-float tech-js"><b>JS</b><span>JavaScript</span></div>
-          <div className="tech-float tech-ts"><b>TS</b><span>TypeScript</span></div>
-          <div className="tech-float tech-react"><b>◉</b><span>React</span></div>
-          <div className="tech-float tech-next"><b>N</b><span>Next.js</span></div>
-          <div className="tech-float tech-node"><b>⬡</b><span>Node.js</span></div>
-          <div className="tech-float tech-db"><b>▤</b><span>PostgreSQL</span></div>
-          <div className="tech-float tech-supa"><b>◈</b><span>Supabase</span></div>
-          <div className="tech-float tech-git"><b>⌘</b><span>Git</span></div>
+          <a className="tech-float tech-html" href="#skills" aria-label="Explorer les compétences HTML"><span className="tech-spin"><span className="tech-face tech-front"><b>5</b><span>HTML</span></span><span className="tech-face tech-back"><b>↗</b><span>Compétences</span></span></span></a>
+          <a className="tech-float tech-css" href="#skills" aria-label="Explorer les compétences CSS"><span className="tech-spin"><span className="tech-face tech-front"><b>✳</b><span>CSS</span></span><span className="tech-face tech-back"><b>↗</b><span>Compétences</span></span></span></a>
+          <a className="tech-float tech-js" href="#skills" aria-label="Explorer les compétences JavaScript"><span className="tech-spin"><span className="tech-face tech-front"><b>JS</b><span>JavaScript</span></span><span className="tech-face tech-back"><b>↗</b><span>Compétences</span></span></span></a>
+          <a className="tech-float tech-ts" href="#skills" aria-label="Explorer les compétences TypeScript"><span className="tech-spin"><span className="tech-face tech-front"><b>TS</b><span>TypeScript</span></span><span className="tech-face tech-back"><b>↗</b><span>Compétences</span></span></span></a>
+          <a className="tech-float tech-react" href="#projects" aria-label="Découvrir les projets réalisés avec React"><span className="tech-spin"><span className="tech-face tech-front"><b>◉</b><span>React</span></span><span className="tech-face tech-back"><b>↗</b><span>Projets</span></span></span></a>
+          <a className="tech-float tech-next" href="#projects" aria-label="Découvrir les projets réalisés avec Next.js"><span className="tech-spin"><span className="tech-face tech-front"><b>N</b><span>Next.js</span></span><span className="tech-face tech-back"><b>↗</b><span>Projets</span></span></span></a>
+          <a className="tech-float tech-node" href="#services" aria-label="Découvrir les services back-end"><span className="tech-spin"><span className="tech-face tech-front"><b>⬡</b><span>Node.js</span></span><span className="tech-face tech-back"><b>↗</b><span>Services</span></span></span></a>
+          <a className="tech-float tech-db" href="#skills" aria-label="Explorer les compétences en bases de données"><span className="tech-spin"><span className="tech-face tech-front"><b>▤</b><span>PostgreSQL</span></span><span className="tech-face tech-back"><b>↗</b><span>Compétences</span></span></span></a>
+          <a className="tech-float tech-supa" href="#projects" aria-label="Découvrir les projets utilisant Supabase"><span className="tech-spin"><span className="tech-face tech-front"><b>◈</b><span>Supabase</span></span><span className="tech-face tech-back"><b>↗</b><span>Projets</span></span></span></a>
+          <a className="tech-float tech-git" href="#method" aria-label="Découvrir ma méthode de travail avec Git"><span className="tech-spin"><span className="tech-face tech-front"><b>⌘</b><span>Git</span></span><span className="tech-face tech-back"><b>↗</b><span>Méthode</span></span></span></a>
           <div className="portrait-caption"><span>DUKOUA NGUESSAN SAMUEL JUNIOR</span><small>FULL-STACK WEB DEVELOPER · SINCE 2015</small></div>
         </div>
         <a className="scroll-hint" href="#about"><ArrowDown size={14}/> {t.scroll}</a>
