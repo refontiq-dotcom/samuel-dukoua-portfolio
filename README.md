@@ -16,7 +16,7 @@ Le portfolio distingue :
 
 ## Projets présentés
 
-Séjoura, Trouvetou, Schooly, Refontiq Control Center, TechPilot et Transora. Les descriptions doivent rester alignées sur l'état réel de chaque dépôt. Les visuels abstraits de projet sont des éléments de présentation et ne doivent pas être interprétés comme des captures d'écran des produits.
+Transora, Séjoura, Trouvetou (réservation en ligne), Schooly (en développement) et Refontiq Control Center. Les cartes renvoient vers les dépôts GitHub. Les visuels marqués « Illustration » sont des représentations conceptuelles, pas des captures des applications. Transora est en développement. Le paiement via l’API de l’opérateur s’active après configuration des identifiants fournis par celui-ci. Le flux Wave de Séjoura est optionnel selon la configuration.
 
 ## Démarrer en local
 

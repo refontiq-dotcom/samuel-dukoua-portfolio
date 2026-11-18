@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="860" viewBox="0 0 1440 860" fill="none">
+<rect width="1440" height="860" rx="28" fill="#F3F5FA"/>
+<rect x="24" y="24" width="1392" height="812" rx="20" fill="#FFFFFF"/>
+<rect x="24" y="24" width="238" height="812" rx="20" fill="#252044"/>
+<path d="M242 24h20v812h-20z" fill="#252044"/>
+<rect x="52" y="54" width="42" height="42" rx="13" fill="#7967E8"/>
+<path d="M63 73h20M73 63v20M64 64l18 18M82 64 64 82" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+<text x="108" y="75" fill="#fff" font-family="Arial,sans-serif" font-size="25" font-weight="700">schooly</text>
+<text x="108" y="94" fill="#B5B0CF" font-family="Arial,sans-serif" font-size="10" letter-spacing="1.8">ESPACE &#201;TABLISSEMENT</text>
+<rect x="42" y="132" width="202" height="48" rx="12" fill="#39325F"/>
+<rect x="59" y="149" width="13" height="13" rx="3" stroke="#B9B0FF" stroke-width="2"/><path d="M62 156h7M65.5 152v8" stroke="#B9B0FF" stroke-width="1.5"/>
+<text x="86" y="162" fill="#fff" font-family="Arial,sans-serif" font-size="15" font-weight="600">Vue d'ensemble</text>
+<g fill="#B5B0CF" font-family="Arial,sans-serif" font-size="14">
+<text x="86" y="225">R&#233;servations</text><text x="86" y="278">&#201;l&#232;ves</text><text x="86" y="331">Classes &amp; places</text><text x="86" y="384">Enseignants</text><text x="86" y="437">Pr&#233;sences</text><text x="86" y="490">Messages</text>
+</g>
+<g stroke="#9892B7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+<rect x="59" y="207" width="17" height="13" rx="3"/><path d="M62 204v6M73 204v6M59 212h17"/><circle cx="67" cy="260" r="8"/><path d="M54 278c2-9 24-9 26 0"/><rect x="59" y="313" width="17" height="18" rx="2"/><path d="M64 318h7M64 323h7"/><circle cx="67" cy="377" r="8"/><path d="M54 395c2-9 24-9 26 0"/><rect x="58" y="429" width="18" height="15" rx="3"/><path d="m62 436 3 3 7-7"/><path d="M59 483h17M59 489h12M59 495h8"/>
+</g>
+<path d="M46 768h192" stroke="#514B72"/>
+<circle cx="68" cy="800" r="18" fill="#E8E4FF"/><text x="68" y="805" text-anchor="middle" fill="#5349A1" font-family="Arial,sans-serif" font-size="12" font-weight="700">SK</text>
+<text x="98" y="798" fill="#fff" font-family="Arial,sans-serif" font-size="13" font-weight="600">Administration</text><text x="98" y="815" fill="#B5B0CF" font-family="Arial,sans-serif" font-size="11">Gestion de l'&#233;cole</text>
+<text x="302" y="79" fill="#28243F" font-family="Arial,sans-serif" font-size="26" font-weight="700">Tableau de bord</text>
+<text x="302" y="107" fill="#85849A" font-family="Arial,sans-serif" font-size="14">Suivez les inscriptions et les places de votre &#233;tablissement.</text>
+<rect x="1217" y="52" width="154" height="45" rx="12" fill="#F6F5FC"/><circle cx="1242" cy="74" r="13" fill="#E7E3FF"/><path d="M1237 74h10M1242 69v10" stroke="#7162CE" stroke-width="1.7" stroke-linecap="round"/><text x="1264" y="79" fill="#544D79" font-family="Arial,sans-serif" font-size="13" font-weight="600">Nouvelle ann&#233;e</text>
+<g>
+<rect x="302" y="139" width="326" height="132" rx="16" fill="#fff" stroke="#ECEBF3"/><rect x="326" y="161" width="39" height="39" rx="12" fill="#F0EDFF"/><path d="M337 173h17v14h-17zM341 169v7M350 169v7M337 177h17" stroke="#7667D8" stroke-width="1.7" stroke-linejoin="round"/>
+<text x="326" y="226" fill="#85849A" font-family="Arial,sans-serif" font-size="13">Dossiers d'inscription</text><text x="326" y="255" fill="#28243F" font-family="Arial,sans-serif" font-size="26" font-weight="700">128</text><rect x="543" y="238" width="61" height="21" rx="10.5" fill="#EAF8F1"/><text x="573" y="252" text-anchor="middle" fill="#238B5E" font-family="Arial,sans-serif" font-size="10" font-weight="700">+12,5%</text>
+<rect x="650" y="139" width="326" height="132" rx="16" fill="#fff" stroke="#ECEBF3"/><rect x="674" y="161" width="39" height="39" rx="12" fill="#EAF8F1"/><path d="M685 172h17v15h-17zM685 177h17M690 172v15M697 172v15" stroke="#29996A" stroke-width="1.6"/>
+<text x="674" y="226" fill="#85849A" font-family="Arial,sans-serif" font-size="13">Places encore disponibles</text><text x="674" y="255" fill="#28243F" font-family="Arial,sans-serif" font-size="26" font-weight="700">24</text><text x="727" y="254" fill="#85849A" font-family="Arial,sans-serif" font-size="12">sur 180 places</text>
+<rect x="998" y="139" width="373" height="132" rx="16" fill="#fff" stroke="#ECEBF3"/><rect x="1022" y="161" width="39" height="39" rx="12" fill="#FFF3E5"/><circle cx="1041.5" cy="180.5" r="9" stroke="#E89B38" stroke-width="1.8"/><path d="M1041.5 175v6l4 2" stroke="#E89B38" stroke-width="1.8" stroke-linecap="round"/>
+<text x="1022" y="226" fill="#85849A" font-family="Arial,sans-serif" font-size="13">R&#233;servations &#224; traiter</text><text x="1022" y="255" fill="#28243F" font-family="Arial,sans-serif" font-size="26" font-weight="700">08</text><rect x="1276" y="238" width="70" height="21" rx="10.5" fill="#FFF3E5"/><text x="1311" y="252" text-anchor="middle" fill="#C17A22" font-family="Arial,sans-serif" font-size="10" font-weight="700">&#192; valider</text>
+</g>
+<rect x="302" y="293" width="650" height="260" rx="16" fill="#fff" stroke="#ECEBF3"/>
+<text x="326" y="328" fill="#28243F" font-family="Arial,sans-serif" font-size="16" font-weight="700">Suivi des inscriptions</text><text x="326" y="350" fill="#85849A" font-family="Arial,sans-serif" font-size="12">Demandes re&#231;ues cette ann&#233;e scolaire</text>
+<g stroke="#EFEEF4"><path d="M363 388h555M363 426h555M363 464h555M363 502h555"/></g>
+<g fill="#85849A" font-family="Arial,sans-serif" font-size="10"><text x="331" y="391">40</text><text x="331" y="429">30</text><text x="331" y="467">20</text><text x="331" y="505">10</text><text x="365" y="525">Sep</text><text x="472" y="525">Oct</text><text x="579" y="525">Nov</text><text x="686" y="525">Dec</text><text x="793" y="525">Jan</text><text x="899" y="525">Fev</text></g>
+<path d="M380 478C420 463 433 461 470 453S530 427 578 438 642 411 686 414 746 385 793 398 851 369 902 379" stroke="#7868DF" stroke-width="4" stroke-linecap="round"/>
+<path d="M380 478C420 463 433 461 470 453S530 427 578 438 642 411 686 414 746 385 793 398 851 369 902 379V502H380Z" fill="url(#area)"/>
+<g fill="#fff" stroke="#7868DF" stroke-width="3"><circle cx="470" cy="453" r="5"/><circle cx="578" cy="438" r="5"/><circle cx="686" cy="414" r="5"/><circle cx="793" cy="398" r="5"/><circle cx="902" cy="379" r="5"/></g>
+<rect x="976" y="293" width="395" height="260" rx="16" fill="#fff" stroke="#ECEBF3"/>
+<text x="1000" y="328" fill="#28243F" font-family="Arial,sans-serif" font-size="16" font-weight="700">Places par niveau</text><text x="1000" y="350" fill="#85849A" font-family="Arial,sans-serif" font-size="12">Occupation des classes</text>
+<text x="1000" y="389" fill="#5C5971" font-family="Arial,sans-serif" font-size="12">CP</text><rect x="1050" y="376" width="222" height="13" rx="6.5" fill="#F0EFF5"/><rect x="1050" y="376" width="178" height="13" rx="6.5" fill="#8A7CE8"/><text x="1304" y="388" fill="#5C5971" font-family="Arial,sans-serif" font-size="11">80%</text>
+<text x="1000" y="427" fill="#5C5971" font-family="Arial,sans-serif" font-size="12">CE1</text><rect x="1050" y="414" width="222" height="13" rx="6.5" fill="#F0EFF5"/><rect x="1050" y="414" width="145" height="13" rx="6.5" fill="#A99EF0"/><text x="1304" y="426" fill="#5C5971" font-family="Arial,sans-serif" font-size="11">65%</text>
+<text x="1000" y="465" fill="#5C5971" font-family="Arial,sans-serif" font-size="12">CE2</text><rect x="1050" y="452" width="222" height="13" rx="6.5" fill="#F0EFF5"/><rect x="1050" y="452" width="196" height="13" rx="6.5" fill="#7363D3"/><text x="1304" y="464" fill="#5C5971" font-family="Arial,sans-serif" font-size="11">88%</text>
+<text x="1000" y="503" fill="#5C5971" font-family="Arial,sans-serif" font-size="12">CM2</text><rect x="1050" y="490" width="222" height="13" rx="6.5" fill="#F0EFF5"/><rect x="1050" y="490" width="122" height="13" rx="6.5" fill="#BDB5F5"/><text x="1304" y="502" fill="#5C5971" font-family="Arial,sans-serif" font-size="11">55%</text>
+<rect x="302" y="575" width="1069" height="225" rx="16" fill="#fff" stroke="#ECEBF3"/>
+<text x="326" y="612" fill="#28243F" font-family="Arial,sans-serif" font-size="16" font-weight="700">R&#233;servations r&#233;centes</text><text x="326" y="635" fill="#85849A" font-family="Arial,sans-serif" font-size="12">Les derniers dossiers soumis par les familles</text>
+<g fill="#9694A8" font-family="Arial,sans-serif" font-size="10" font-weight="700" letter-spacing=".7"><text x="326" y="669">&#201;L&#200;VE</text><text x="657" y="669">NIVEAU</text><text x="782" y="669">DATE</text><text x="944" y="669">STATUT</text><text x="1140" y="669">DOSSIER</text></g>
+<path d="M326 682h1021M326 724h1021M326 766h1021" stroke="#F0EFF4"/>
+<g font-family="Arial,sans-serif" font-size="12"><circle cx="345" cy="703" r="13" fill="#EDEAFF"/><text x="345" y="707" text-anchor="middle" fill="#6557BD" font-size="9" font-weight="700">AD</text><text x="369" y="707" fill="#39364F" font-weight="600">Aminata D.</text><text x="657" y="707" fill="#656378">CP</text><text x="782" y="707" fill="#656378">12 janv. 2026</text><rect x="944" y="692" width="91" height="21" rx="10.5" fill="#FFF3E5"/><text x="989" y="706" text-anchor="middle" fill="#C17A22" font-size="10">En attente</text><text x="1140" y="707" fill="#7667D8" font-size="11" font-weight="600">Voir le dossier &#8594;</text>
+<circle cx="345" cy="745" r="13" fill="#E7F5EF"/><text x="345" y="749" text-anchor="middle" fill="#2B8B63" font-size="9" font-weight="700">YK</text><text x="369" y="749" fill="#39364F" font-weight="600">Yao K.</text><text x="657" y="749" fill="#656378">CE1</text><text x="782" y="749" fill="#656378">11 janv. 2026</text><rect x="944" y="734" width="91" height="21" rx="10.5" fill="#EAF8F1"/><text x="989" y="748" text-anchor="middle" fill="#238B5E" font-size="10">Confirm&#233;e</text><text x="1140" y="749" fill="#7667D8" font-size="11" font-weight="600">Voir le dossier &#8594;</text>
+<circle cx="345" cy="787" r="13" fill="#FFF0E9"/><text x="345" y="791" text-anchor="middle" fill="#D4744D" font-size="9" font-weight="700">MK</text><text x="369" y="791" fill="#39364F" font-weight="600">Mariam K.</text><text x="657" y="791" fill="#656378">CM2</text><text x="782" y="791" fill="#656378">10 janv. 2026</text><rect x="944" y="776" width="91" height="21" rx="10.5" fill="#FFF3E5"/><text x="989" y="790" text-anchor="middle" fill="#C17A22" font-size="10">En attente</text><text x="1140" y="791" fill="#7667D8" font-size="11" font-weight="600">Voir le dossier &#8594;</text></g>
+<defs><linearGradient id="area" x1="640" y1="379" x2="640" y2="502" gradientUnits="userSpaceOnUse"><stop stop-color="#8A7CE8" stop-opacity=".22"/><stop offset="1" stop-color="#8A7CE8" stop-opacity="0"/></linearGradient></defs>
+</svg>
