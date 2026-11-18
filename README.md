@@ -1,5 +1,7 @@
 # Portfolio — Dukoua Nguessan Samuel Junior
 
+🌐 **Portfolio en ligne : [https://portfolio.refontiq.com](https://portfolio.refontiq.com)**
+
 Portfolio professionnel bilingue (français par défaut / anglais), construit avec Next.js, React et TypeScript.
 
 ## Positionnement
@@ -39,7 +41,7 @@ La CI GitHub Actions exécute ces contrôles sur les pull requests et les change
 
 ## Éléments de publication à valider
 
-- Vérifier le domaine définitif et les métadonnées SEO/Open Graph.
+- Vérifier les métadonnées SEO/Open Graph.
 - Remplacer progressivement les visuels abstraits par des captures réelles autorisées et vérifiées.
 - Vérifier les CV français et anglais à chaque mise à jour du profil.
 - Confirmer les liens de contact et les profils publics avant diffusion.
