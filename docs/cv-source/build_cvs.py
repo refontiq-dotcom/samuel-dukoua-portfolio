@@ -1,4 +1,4 @@
-﻿from pathlib import Path
+from pathlib import Path
 from reportlab.lib import colors
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
@@ -6,7 +6,13 @@ from reportlab.lib.units import mm
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle
-FONT=Path('C:/Windows/Fonts/arial.ttf'); BOLD=Path('C:/Windows/Fonts/arialbd.ttf')
+def find_font(candidates):
+ for candidate in candidates:
+  path=Path(candidate)
+  if path.exists(): return path
+ raise FileNotFoundError('Aucune police compatible trouvée. Installez Arial ou DejaVu Sans.')
+FONT=find_font(['C:/Windows/Fonts/arial.ttf','/usr/share/fonts/truetype/msttcorefonts/Arial.ttf','/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf'])
+BOLD=find_font(['C:/Windows/Fonts/arialbd.ttf','/usr/share/fonts/truetype/msttcorefonts/Arial_Bold.ttf','/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf'])
 pdfmetrics.registerFont(TTFont('ArialUnicode',str(FONT))); pdfmetrics.registerFont(TTFont('ArialUnicode-Bold',str(BOLD)))
 NAVY=colors.HexColor('#111827'); RED=colors.HexColor('#d92f45'); MUTED=colors.HexColor('#606875'); PALE=colors.HexColor('#f3f5f8'); LINE=colors.HexColor('#e3e6eb')
 def build(fr):
@@ -31,7 +37,7 @@ def build(fr):
  header.setStyle(TableStyle([('BACKGROUND',(0,0),(-1,-1),NAVY),('VALIGN',(0,0),(-1,-1),'MIDDLE'),('LEFTPADDING',(0,0),(-1,-1),8),('RIGHTPADDING',(0,0),(-1,-1),8),('TOPPADDING',(0,0),(-1,-1),9),('BOTTOMPADDING',(0,0),(-1,-1),8)]))
  left=[P('COMPÉTENCES TECHNIQUES' if fr else 'TECHNICAL SKILLS','sectionX')]
  for a,b in skills:left += [P(a,'labelX'),P(b,'smallX'),Spacer(1,2)]
- left += [P('PARCOURS DE FORMATION' if fr else 'EDUCATION & TRAINING','sectionX'),P('Parcours principal · 2016–2019' if fr else 'Main program · 2016–2019','labelX'),P('Formation développeur full-stack — OpenClassrooms' if fr else 'Full-stack developer training — OpenClassrooms'),P('Développeur full-stack — OpenClassrooms (2022–2023)' if fr else 'Full-stack developer — OpenClassrooms (2022–2023)','smallX'),P('Opérateur vidéo · formation de 6 mois — SIGASÉCURITÉ' if fr else 'Video operator · 6-month training — SIGASÉCURITÉ','smallX'),P('BEPC obtenu (2008–2009)<br/>Niveau Terminale (2012–2013)' if fr else 'BEPC certificate (2008–2009)<br/>Upper secondary level (2012–2013)','smallX'),P('LANGUES' if fr else 'LANGUAGES','sectionX'),P('Français : parlé, lu et écrit<br/>Anglais : niveau académique' if fr else 'French: spoken, read and written<br/>English: academic level','smallX'),P('ATOUTS' if fr else 'STRENGTHS','sectionX'),P('Rigueur, ponctualité, esprit d’équipe, sens des responsabilités.' if fr else 'Reliability, punctuality, teamwork and responsibility.','smallX')]
+ left += [P('PARCOURS DE FORMATION' if fr else 'EDUCATION & TRAINING','sectionX'),P('Parcours principal · 2016–2019' if fr else 'Main program · 2016–2019','labelX'),P('Formation développeur full-stack — OpenClassrooms' if fr else 'Full-stack developer training — OpenClassrooms'),P('Développeur full-stack — OpenClassrooms (2022–2023)' if fr else 'Full-stack developer — OpenClassrooms (2022–2023)','smallX'),P('Opérateur vidéo · formation de 6 mois — SIGASÉCURITÉ' if fr else 'Video operator · 6-month training — SIGASÉCURITÉ','smallX'),P('BEPC obtenu (2008–2009)<br/>Niveau Terminale (2012–2013)' if fr else 'BEPC certificate (2008–2009)<br/>Upper secondary level (2012–2013)','smallX'),P('LANGUES' if fr else 'LANGUAGES','sectionX'),P('Français : langue maternelle<br/>Anglais : notions de base acquises à l’école' if fr else 'French: Native language<br/>English: Basic proficiency (academic foundation)','smallX'),P('ATOUTS' if fr else 'STRENGTHS','sectionX'),P('Rigueur, ponctualité, esprit d’équipe, sens des responsabilités.' if fr else 'Reliability, punctuality, teamwork and responsibility.','smallX')]
  right=[P('PROFIL' if fr else 'PROFILE','sectionX'),P(profile),P('PROJETS DE DÉVELOPPEMENT' if fr else 'DEVELOPMENT PROJECTS','sectionX')]
  for name,desc in projects:right += [P(name,'labelX'),P(desc,'smallX')]
  right += [P('EXPÉRIENCE PROFESSIONNELLE' if fr else 'PROFESSIONAL EXPERIENCE','sectionX')]
