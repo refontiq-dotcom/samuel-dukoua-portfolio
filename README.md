@@ -6,7 +6,9 @@ Portfolio professionnel bilingue (français par défaut / anglais), construit av
 
 ## Positionnement
 
-Développeur Web Full-Stack : conception et développement d'applications web, solutions SaaS, API, architecture applicative et intégrations.
+Développeur Full Stack, SaaS Builder, Product Engineer et fondateur de REFONTIQ, basé en Côte d’Ivoire et ouvert aux opportunités internationales.
+
+Je construis des produits numériques à partir des besoins métier : cadrage, architecture logicielle, interfaces, API, données, intégrations, tests et maintenance.
 
 Je prends en charge l'analyse des besoins, les choix techniques, l'implémentation, les tests et l'amélioration continue. Les outils de recherche et d'assistance peuvent soutenir certaines étapes, mais les décisions, la réalisation et la vérification du travail restent sous ma responsabilité.
 
@@ -18,7 +20,13 @@ Le portfolio distingue :
 
 ## Projets présentés
 
-Transora, Séjoura, Trouvetou (réservation en ligne), Schooly (en développement) et Refontiq Control Center. Les cartes renvoient vers les dépôts GitHub. Les visuels marqués « Illustration » sont des représentations conceptuelles, pas des captures des applications. Transora est en développement. Le paiement via l’API de l’opérateur s’active après configuration des identifiants fournis par celui-ci. Le flux Wave de Séjoura est optionnel selon la configuration.
+- **Transora** — API SaaS de transport interurbain en développement. Les paiements carte et Mobile Money sont confirmés manuellement; aucun prestataire de paiement n’est connecté.
+- **Séjoura** — gestion des établissements, chambres, réservations, équipes, ménage, comptabilité et factures. Le checkout Wave automatisé est optionnel et nécessite des clés et webhooks configurés.
+- **Trouvetou** — catalogue d’hôtels, résidences, écoles, cliniques et restaurants avec recherche, réservation hôtelière et demande de place scolaire.
+- **Schooly** — le noyau de gestion scolaire documenté comme en service couvre la structure, les admissions, les réinscriptions, les places et un socle financier. Les bulletins et plusieurs modules pédagogiques restent en développement.
+- **Refontiq Control Center** — outil interne utilisé notamment pour valider les demandes d’abonnement Séjoura; son code source n’est pas public.
+
+Les cartes proposent le site et, lorsque le dépôt est public, le code source. Les visuels marqués « Illustration » sont conceptuels et ne sont pas présentés comme des captures des applications.
 
 ## Démarrer en local
 

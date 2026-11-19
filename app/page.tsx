@@ -19,15 +19,17 @@ type Lang = 'fr' | 'en';
 
 const copy = {
   fr: {
-    nav: ['Accueil', 'Compétences', 'À propos', 'Projets', 'Contact'],
+    skipLink: 'Aller au contenu principal',
+    nav: ['Accueil', 'Compétences', 'Parcours', 'Projets', 'Contact'],
     greeting: 'Bonjour, je suis',
-    role: 'Développeur web full-stack',
-    intro: 'Je conçois des applications web et des plateformes SaaS utiles, structurées et évolutives.',
+    role: 'Développeur Full Stack',
+    specialty: 'SaaS Builder · Product Engineer',
+    intro: 'Fondateur de REFONTIQ, je transforme des besoins métier en produits numériques : cadrage, architecture, interfaces, API et intégrations. Basé en Côte d’Ivoire, ouvert aux opportunités internationales.',
     work: 'Voir mes projets',
     contact: 'Me contacter',
     download: 'Télécharger mon CV',
     languageLabel: 'Afficher la version anglaise',
-    location: 'Côte d’Ivoire · Ouvert à l’international',
+    location: 'Fondateur de REFONTIQ · Côte d’Ivoire · Opportunités internationales',
     portraitNote: 'Du besoin métier au produit.',
     since: 'Apprentissage de la programmation commencé en 2015',
     skillsTag: 'SAVOIR-FAIRE',
@@ -37,15 +39,29 @@ const copy = {
     hideSkillDetails: 'Masquer le d\u00e9tail',
     skillProjectsLabel: 'Exemples de projets',
     skillCards: [
-      { title: 'Langages & données', detail: 'TypeScript, JavaScript, SQL, PostgreSQL', more: 'TypeScript dans Transora, Séjoura et Schooly. PostgreSQL et SQL structurent les données métier de ces applications.' },
-      { title: 'Front-end & UX', detail: 'React, Next.js, Tailwind CSS, Responsive design', more: 'Next.js et React dans Séjoura, Trouvetou et Schooly. Tailwind CSS est utilisé dans les interfaces de ces projets.' },
-      { title: 'Back-end & API', detail: 'Node.js, Express, API REST, Supabase, Webhooks', more: 'Transora utilise une API Node.js/Express avec PostgreSQL. Séjoura et Schooly s’appuient sur Supabase; Séjoura documente des webhooks.' },
-      { title: 'Sécurité & intégration continue', detail: 'Git/GitHub, GitHub Actions CI, JWT, authentification, RLS', more: 'Les dépôts contiennent des workflows GitHub Actions. Transora utilise JWT; Séjoura et Schooly documentent l’authentification et les règles RLS de Supabase.' },
-      { title: 'Architecture & méthodes', detail: 'SaaS multi-tenant, flux Wave optionnel, IA assistée', more: 'Transora et Schooly documentent l’isolation multi-tenant. Séjoura propose un flux Wave optionnel. Les formations OpenClassrooms abordent les agents IA et le vibe coding.' }
+      { title: 'Langages & données', detail: 'TypeScript, JavaScript, SQL, PostgreSQL', more: 'TypeScript dans Transora, Séjoura et Schooly. SQL et PostgreSQL structurent les données métier de Transora.' },
+      { title: 'Développement frontend', detail: 'React, Next.js, Tailwind CSS, interfaces adaptatives', more: 'Interfaces Next.js et React dans Séjoura, Trouvetou et Schooly, avec Tailwind CSS.' },
+      { title: 'Backend & API', detail: 'Node.js, Express, API REST, Supabase, webhooks', more: 'API Node.js/Express et PostgreSQL dans Transora. Séjoura et Schooly utilisent Supabase; Séjoura documente des webhooks Wave.' },
+      { title: 'Bases de données & sécurité', detail: 'PostgreSQL, Supabase, JWT, authentification, RLS', more: 'JWT dans Transora; politiques RLS et authentification Supabase dans Séjoura et Schooly. Les dépôts incluent des contrôles CI.' },
+      { title: 'Architecture SaaS & produit', detail: 'Multi-tenant, conception métier, cycle produit', more: 'Transora et Schooly documentent l’isolation multi-tenant. Les projets couvrent le cadrage produit, les règles métier et leur implémentation.' },
+      { title: 'Outils & workflows assistés par IA', detail: 'Git, GitHub Actions CI, outils d’assistance IA', more: 'Le workflow GitHub Actions de ce portfolio vérifie le lint, TypeScript et le build. Les formations OpenClassrooms abordent les agents IA et le vibe coding; l’IA assiste certaines étapes sans remplacer la vérification.' }
     ],
     aboutTag: 'À PROPOS',
     aboutTitle: 'Un parcours construit par la pratique.',
-    about: 'J’ai commencé à apprendre la programmation sur OpenClassrooms en 2015, puis réalisé mon premier projet de création de site internet en 2017. Depuis, je poursuis régulièrement des formations sur OpenClassrooms : le développement web est une passion qui me pousse à actualiser mes compétences et à rester au fait des évolutions du métier. Mon expérience en environnement opérationnel a aussi renforcé ma rigueur, mon sens des responsabilités et mon goût du travail en équipe.',
+    about: 'J’ai commencé à apprendre la programmation sur OpenClassrooms en 2015 et réalisé mon premier site en 2017. Les formations continues et mon expérience en environnement opérationnel ont nourri mon évolution vers le développement Full Stack et la conception de produits numériques. Avec REFONTIQ, je travaille de l’analyse des besoins à l’architecture, au développement et à la maintenance.',
+    experienceTag: 'EXPÉRIENCE & ENTREPRENEURIAT',
+    experienceTitle: 'Construire des produits et travailler au plus près des opérations.',
+    experienceIntro: 'Mon activité de fondateur est distincte de mes emplois salariés; les deux nourrissent mon approche du produit et du travail en équipe.',
+    founderRole: 'Fondateur · REFONTIQ',
+    founderPeriod: 'Activité en cours',
+    founderDescription: 'Analyse des besoins, conception produit, architecture logicielle, développement Full Stack, intégrations, tests et maintenance des solutions de l’écosystème.',
+    employmentTitle: 'Expérience opérationnelle',
+    employment: [
+      { dates: '2023–2025', role: 'Opérateur de vidéosurveillance', company: 'SOLIBRA · Treichville' },
+      { dates: '2021–2022', role: 'Chef d’équipe', company: 'Unilever Côte d’Ivoire' },
+      { dates: '2018–2020', role: 'Opérateur de vidéosurveillance', company: 'PULLMAN Hôtel' },
+      { dates: '2017–2018', role: 'Opérateur de vidéosurveillance', company: 'FILTISAC' },
+    ],
     milestones: [
       { date: '2015', label: 'Début de mon apprentissage de la programmation sur OpenClassrooms' },
       { date: '2017', label: 'Réalisation de mon premier projet de création de site internet' },
@@ -57,15 +73,39 @@ const copy = {
     allProjects: 'Voir tous mes dépôts',
     projectLink: 'Visiter le site',
     sourceLink: 'Voir le code source',
+    audienceLabel: 'Pour qui',
+    featuresLabel: 'Fonctionnalités vérifiées',
+    contributionLabel: 'Ma contribution',
     projectVisualNotes: { transora: 'Illustration', sejoura: 'Capture du tableau de bord', trouvetou: 'Logo du projet', schooly: 'Illustration', control: 'Illustration' },
     projectNames: { transora: 'Transora', sejoura: 'Séjoura', trouvetou: 'Trouvetou', schooly: 'Schooly', control: 'Refontiq Control Center' },
-    projectStatus: { transora: 'En développement', sejoura: 'Plateforme SaaS', trouvetou: 'Portail de réservation', schooly: 'En développement', control: 'Console de gestion' },
+    projectStatus: { transora: 'En développement', sejoura: 'Plateforme SaaS', trouvetou: 'Catalogue & réservations', schooly: 'Noyau en service · évolution en cours', control: 'Outil interne' },
+    projectAudiences: {
+      transora: 'Entreprises de transport interurbain et gares',
+      sejoura: 'Hôtels et gestionnaires de résidences meublées',
+      trouvetou: 'Voyageurs, familles et personnes recherchant un établissement',
+      schooly: 'Directions, secrétariats et équipes des établissements scolaires',
+      control: 'Équipe opérationnelle de l’écosystème REFONTIQ',
+    },
     projectDescriptions: {
-      transora: 'API SaaS de transport interurbain : réservations, gestion des places et billets QR. Le paiement est intégré via l’API de l’opérateur et s’active après configuration des identifiants fournis par celui-ci.',
-      sejoura: 'Gestion de résidences meublées, réservations et factures; le flux de paiement Wave est optionnel selon la configuration.',
-      trouvetou: 'Portail de découverte d’hôtels, d’écoles et de cliniques avec réservation en ligne.',
-      schooly: 'Réservation de places scolaires et gestion d’établissements, connectée à Trouvetou.',
-      control: 'Tableau de bord centralisé pour l’écosystème Refontiq.',
+      transora: 'Plateforme SaaS qui centralise les opérations de transport interurbain dans une API multi-tenant.',
+      sejoura: 'Outil de gestion des séjours, des équipes et du suivi financier pour les établissements d’hébergement.',
+      trouvetou: 'Catalogue multi-catégories pour découvrir des hôtels, résidences, écoles, cliniques et restaurants.',
+      schooly: 'Solution de digitalisation de la gestion scolaire; le noyau administratif documenté en service évolue encore.',
+      control: 'Outil interne de pilotage REFONTIQ, notamment utilisé pour valider des demandes d’abonnement de Séjoura.',
+    },
+    projectFeatures: {
+      transora: 'Réseau de villes, gares et lignes · réservations et places · billets QR et contrôle en lecture seule. Paiements carte et Mobile Money confirmés manuellement; aucun prestataire n’est connecté.',
+      sejoura: 'Établissements et chambres · réservations et prolongations · personnel et ménage · comptabilité et factures. Le paiement Wave automatisé est optionnel et dépend de la configuration des clés et webhooks.',
+      trouvetou: 'Annonces reliées à Supabase · recherche par catégorie et proximité · réservation hôtelière et demande de place scolaire depuis l’interface.',
+      schooly: 'Structure scolaire · admissions et réinscriptions · suivi des places · socle financier. Les bulletins et plusieurs modules pédagogiques restent en développement; l’accès parent évolue encore.',
+      control: 'Validation des demandes d’abonnement Séjoura transférée depuis la console locale; le dépôt et les autres modules ne sont pas publics.',
+    },
+    projectContributions: {
+      transora: 'Conception produit, modèle métier multi-tenant et développement Full Stack de l’API et des parcours opérationnels.',
+      sejoura: 'Conception des modules métier et développement des interfaces, traitements applicatifs et intégrations.',
+      trouvetou: 'Conception du parcours de découverte et développement du catalogue connecté aux données Supabase.',
+      schooly: 'Conception de la solution et développement des fondations de gestion scolaire dans un monorepo multi-applications.',
+      control: 'Conception et développement de l’outil de pilotage au sein de l’écosystème REFONTIQ.',
     },
     projectTags: {
       transora: ['Node.js', 'Express', 'PostgreSQL', 'TypeScript'],
@@ -83,15 +123,17 @@ const copy = {
     rights: 'Tous droits réservés.',
   },
   en: {
-    nav: ['Home', 'Skills', 'About', 'Projects', 'Contact'],
+    skipLink: 'Skip to main content',
+    nav: ['Home', 'Skills', 'Experience', 'Projects', 'Contact'],
     greeting: 'Hello, I’m',
-    role: 'Full-stack web developer',
-    intro: 'I build useful, well-structured and scalable web applications and SaaS platforms.',
+    role: 'Full-Stack Developer',
+    specialty: 'SaaS Builder · Product Engineer',
+    intro: 'As founder of REFONTIQ, I turn business needs into digital products, from discovery and architecture to interfaces, APIs and integrations. Based in Côte d’Ivoire and open to international opportunities.',
     work: 'Explore my work',
     contact: 'Get in touch',
     download: 'Download my CV',
     languageLabel: 'Switch to French',
-    location: 'Côte d’Ivoire · Open to international opportunities',
+    location: 'REFONTIQ Founder · Côte d’Ivoire · Open to international roles',
     portraitNote: 'From business needs to products.',
     since: 'Started learning programming in 2015',
     skillsTag: 'CORE SKILLS',
@@ -101,15 +143,29 @@ const copy = {
     hideSkillDetails: 'Hide details',
     skillProjectsLabel: 'Related projects',
     skillCards: [
-      { title: 'Languages & data', detail: 'TypeScript, JavaScript, SQL, PostgreSQL', more: 'TypeScript in Transora, Séjoura and Schooly. PostgreSQL and SQL structure the business data in these applications.' },
-      { title: 'Frontend & UX', detail: 'React, Next.js, Tailwind CSS, Responsive design', more: 'Next.js and React in Séjoura, Trouvetou and Schooly. Tailwind CSS is used in these project interfaces.' },
-      { title: 'Backend & APIs', detail: 'Node.js, Express, REST APIs, Supabase, Webhooks', more: 'Transora uses a Node.js/Express API with PostgreSQL. Séjoura and Schooly use Supabase; Séjoura documents webhook flows.' },
-      { title: 'Security & continuous integration', detail: 'Git/GitHub, GitHub Actions CI, JWT, authentication, RLS', more: 'The repositories include GitHub Actions workflows. Transora uses JWT; Séjoura and Schooly document Supabase authentication and RLS policies.' },
-      { title: 'Architecture & methods', detail: 'Multi-tenant SaaS, optional Wave flow, AI-assisted development', more: 'Transora and Schooly document multi-tenant isolation. Séjoura documents an optional Wave flow. OpenClassrooms training covers AI agents and vibe coding.' }
+      { title: 'Programming Languages & Data', detail: 'TypeScript, JavaScript, SQL, PostgreSQL', more: 'TypeScript in Transora, Séjoura and Schooly. SQL and PostgreSQL structure Transora business data.' },
+      { title: 'Frontend Development', detail: 'React, Next.js, Tailwind CSS, responsive interfaces', more: 'Next.js and React interfaces in Séjoura, Trouvetou and Schooly, styled with Tailwind CSS.' },
+      { title: 'Backend Development & APIs', detail: 'Node.js, Express, REST APIs, Supabase, webhooks', more: 'Node.js/Express API and PostgreSQL in Transora. Séjoura and Schooly use Supabase; Séjoura documents Wave webhooks.' },
+      { title: 'Database & Security', detail: 'PostgreSQL, Supabase, JWT, authentication, RLS', more: 'JWT in Transora; Supabase authentication and RLS policies in Séjoura and Schooly. The repositories include CI checks.' },
+      { title: 'SaaS Architecture & Product Development', detail: 'Multi-tenancy, business workflows, product lifecycle', more: 'Transora and Schooly document tenant isolation. Projects cover product discovery, business rules and their implementation.' },
+      { title: 'Development Tools & AI-Assisted Workflows', detail: 'Git, GitHub Actions CI, AI-assisted tools', more: 'This portfolio’s GitHub Actions workflow checks lint, TypeScript and the build. OpenClassrooms training covers AI agents and vibe coding; AI supports selected steps while I remain responsible for reviewing the work.' }
     ],
     aboutTag: 'ABOUT ME',
     aboutTitle: 'A path built through practice.',
-    about: 'I began learning programming on OpenClassrooms in 2015 and completed my first website creation project in 2017. I have continued taking courses on OpenClassrooms ever since; web development is a passion that motivates me to keep my skills current and follow changes in the field. My operations experience has also strengthened my attention to detail, sense of responsibility and teamwork.',
+    about: 'I started learning programming on OpenClassrooms in 2015 and built my first website in 2017. Ongoing training and hands-on operations work have shaped my move into full-stack development and digital product design. Through REFONTIQ, I work across requirements, software architecture, development and maintenance.',
+    experienceTag: 'EXPERIENCE & ENTREPRENEURSHIP',
+    experienceTitle: 'Building products with an operational perspective.',
+    experienceIntro: 'My founder work is separate from my employee roles; both inform how I approach products and teamwork.',
+    founderRole: 'Founder · REFONTIQ',
+    founderPeriod: 'Ongoing',
+    founderDescription: 'Requirements analysis, product design, software architecture, full-stack development, integrations, testing and maintenance across the ecosystem.',
+    employmentTitle: 'Operations experience',
+    employment: [
+      { dates: '2023–2025', role: 'Video Surveillance Operator', company: 'SOLIBRA · Treichville' },
+      { dates: '2021–2022', role: 'Team Leader', company: 'Unilever Côte d’Ivoire' },
+      { dates: '2018–2020', role: 'Video Surveillance Operator', company: 'PULLMAN Hotel' },
+      { dates: '2017–2018', role: 'Video Surveillance Operator', company: 'FILTISAC' },
+    ],
     milestones: [
       { date: '2015', label: 'Started learning programming on OpenClassrooms' },
       { date: '2017', label: 'Completed my first website creation project' },
@@ -121,15 +177,39 @@ const copy = {
     allProjects: 'View all repositories',
     projectLink: 'Visit the site',
     sourceLink: 'View source code',
+    audienceLabel: 'For',
+    featuresLabel: 'Verified capabilities',
+    contributionLabel: 'My contribution',
     projectVisualNotes: { transora: 'Illustration', sejoura: 'Dashboard screenshot', trouvetou: 'Project logo', schooly: 'Illustration', control: 'Illustration' },
     projectNames: { transora: 'Transora', sejoura: 'Séjoura', trouvetou: 'Trouvetou', schooly: 'Schooly', control: 'Refontiq Control Center' },
-    projectStatus: { transora: 'In development', sejoura: 'SaaS platform', trouvetou: 'Booking portal', schooly: 'In development', control: 'Management console' },
+    projectStatus: { transora: 'In development', sejoura: 'SaaS platform', trouvetou: 'Catalog & bookings', schooly: 'Core in service · evolving', control: 'Internal tool' },
+    projectAudiences: {
+      transora: 'Intercity transport companies and bus stations',
+      sejoura: 'Hotels and furnished residence operators',
+      trouvetou: 'Travelers, families and people looking for local services',
+      schooly: 'School leadership, administrative teams and staff',
+      control: 'REFONTIQ ecosystem operations team',
+    },
     projectDescriptions: {
-      transora: 'Intercity transport SaaS API: bookings, seat management and QR tickets. Payments use the operator’s API and can be enabled by configuring the credentials supplied by that operator.',
-      sejoura: 'Furnished residence management, bookings and invoices; the Wave payment flow is optional and configuration-dependent.',
-      trouvetou: 'Discovery portal for hotels, schools and clinics with online booking.',
-      schooly: 'School-seat reservations and institution management, connected to Trouvetou.',
-      control: 'Centralized dashboard for the Refontiq ecosystem.',
+      transora: 'A multi-tenant SaaS platform that centralizes intercity transport operations through an API.',
+      sejoura: 'A management product for stays, staff and financial operations at accommodation businesses.',
+      trouvetou: 'A multi-category catalog for discovering hotels, residences, schools, clinics and restaurants.',
+      schooly: 'A school management product whose documented core is in service and continues to evolve.',
+      control: 'An internal REFONTIQ operations tool, including approval of Séjoura subscription requests.',
+    },
+    projectFeatures: {
+      transora: 'Cities, stations and route network · bookings and seat inventory · QR tickets with read-only validation. Card and mobile money payments are confirmed manually; no provider is connected.',
+      sejoura: 'Properties and rooms · bookings and stay extensions · staff and housekeeping · accounting and invoices. Automated Wave checkout is optional and requires configured keys and webhooks.',
+      trouvetou: 'Supabase-backed listings · category and nearby search · hotel booking and school-seat request flows in the interface.',
+      schooly: 'School structure · admissions and re-enrollment · seat tracking · financial core. Report cards and several teaching modules remain in development; parent access is still evolving.',
+      control: 'Subscription request approval moved out of Séjoura’s local console; the repository and other modules are not public.',
+    },
+    projectContributions: {
+      transora: 'Product design, multi-tenant business model and full-stack development of the API and operational flows.',
+      sejoura: 'Business module design and development of interfaces, application logic and integrations.',
+      trouvetou: 'Discovery journey design and development of the catalog connected to Supabase data.',
+      schooly: 'Product design and development of the school management foundations in a multi-application monorepo.',
+      control: 'Product design and development of an operations tool within the REFONTIQ ecosystem.',
     },
     projectTags: {
       transora: ['Node.js', 'Express', 'PostgreSQL', 'TypeScript'],
@@ -161,51 +241,71 @@ const projectItems: Array<{
   { key: 'control', live: 'https://control.refontiq.com/', repo: null, visual: 'control' },
 ];
 
-const skillIllustrations = ['/skills/core-stack.svg', '/skills/frontend-ux.svg', '/skills/backend-data.svg', '/skills/devops-security.svg', '/skills/methods-ai.svg'];
-const skillProjectRefs = [['transora', 'sejoura', 'schooly'], ['sejoura', 'trouvetou', 'schooly'], ['transora', 'sejoura', 'schooly'], ['transora', 'sejoura', 'schooly'], ['transora', 'sejoura', 'schooly']] as const;
+const skillIllustrations = ['/skills/core-stack.svg', '/skills/frontend-ux.svg', '/skills/backend-data.svg', '/skills/devops-security.svg', '/skills/methods-ai.svg', '/skills/devops-security.svg'];
+const skillProjectRefs = [
+  ['transora', 'sejoura', 'schooly'],
+  ['sejoura', 'trouvetou', 'schooly'],
+  ['transora', 'sejoura', 'schooly'],
+  ['transora', 'sejoura', 'schooly'],
+  ['transora', 'schooly'],
+  [],
+] as const;
 
 export default function Home() {
   const [lang, setLang] = useState<Lang>('fr');
   const [menuOpen, setMenuOpen] = useState(false);
   const [openSkill, setOpenSkill] = useState<number | null>(null);
   const t = copy[lang];
-  const navIds = ['home', 'skills', 'about', 'projects', 'contact'];
+  const navIds = ['home', 'skills', 'experience', 'projects', 'contact'];
   const cvHref = lang === 'fr' ? '/CV-Samuel-Dukoua-FR.pdf' : '/Resume-Samuel-Dukoua-EN.pdf';
 
   useEffect(() => {
     document.documentElement.lang = lang;
   }, [lang]);
 
+  useEffect(() => {
+    if (!menuOpen) return;
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') setMenuOpen(false);
+    };
+    window.addEventListener('keydown', closeOnEscape);
+    return () => window.removeEventListener('keydown', closeOnEscape);
+  }, [menuOpen]);
+
   return (
-    <main>
+    <>
+      <a className="skip-link" href="#main-content">{t.skipLink}</a>
       <header className="topbar">
-        <a className="brand" href="#home" aria-label="Samuel, accueil">S<span>.</span></a>
-        <nav className={menuOpen ? 'nav nav-open' : 'nav'} aria-label={lang === 'fr' ? 'Navigation principale' : 'Main navigation'}>
+        <a className="brand" href="#home" aria-label={lang === 'fr' ? 'Samuel, accueil' : 'Samuel, home'}>S<span>.</span></a>
+        <nav id="primary-navigation" className={menuOpen ? 'nav nav-open' : 'nav'} aria-label={lang === 'fr' ? 'Navigation principale' : 'Main navigation'}>
           {t.nav.map((item, i) => (
             <a key={item} href={`#${navIds[i]}`} onClick={() => setMenuOpen(false)}>{item}</a>
           ))}
         </nav>
         <div className="top-actions">
-          <button className="lang" onClick={() => setLang(lang === 'fr' ? 'en' : 'fr')} aria-label={t.languageLabel}>
+          <button className="lang" onClick={() => setLang((current) => current === 'fr' ? 'en' : 'fr')} aria-label={t.languageLabel}>
             <Globe2 size={15} /> {lang.toUpperCase()}
           </button>
           <a className="header-download" href={cvHref} download>{t.download}<ArrowDown size={14} /></a>
-          <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)} aria-label={menuOpen ? 'Close menu' : 'Open menu'} aria-expanded={menuOpen}>
+          <button className="menu-toggle" onClick={() => setMenuOpen((open) => !open)} aria-label={lang === 'fr' ? (menuOpen ? 'Fermer le menu' : 'Ouvrir le menu') : (menuOpen ? 'Close menu' : 'Open menu')} aria-controls="primary-navigation" aria-expanded={menuOpen}>
             {menuOpen ? <X size={21} /> : <Menu size={21} />}
           </button>
         </div>
       </header>
 
+      <main id="main-content">
       <section className="hero" id="home">
         <div className="hero-inner section-wrap">
           <div className="hero-copy">
             <div className="eyebrow"><span className="pulse" />{t.greeting}</div>
             <h1><span>Dukoua<br className="mobile-name-break" /> Nguessan</span><span className="name-accent">Samuel Junior</span></h1>
             <p className="hero-role">{t.role}</p>
+            <p className="hero-specialty">{t.specialty}</p>
             <p className="hero-intro">{t.intro}</p>
             <div className="hero-actions">
               <a className="button-primary" href="#projects">{t.work}<ArrowRight size={16} /></a>
               <a className="button-secondary" href="#contact">{t.contact}<Mail size={15} /></a>
+              <a className="button-secondary hero-download" href={cvHref} download>{t.download}<ArrowDown size={15} /></a>
             </div>
             <div className="hero-socials">
               <a href="https://github.com/refontiq-dotcom" target="_blank" rel="noreferrer" aria-label="GitHub"><Github size={17} /></a>
@@ -215,7 +315,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="hero-visual" aria-label="Portrait professionnel de Dukoua Nguessan Samuel Junior">
+          <div className="hero-visual">
             <div className="hero-shape" />
             <div className="hero-shape-shadow" />
             <Image src="/samuel-dukoua-transparent.png" unoptimized alt={lang === 'fr' ? 'Portrait de Dukoua Nguessan Samuel Junior' : 'Portrait of Dukoua Nguessan Samuel Junior'} width={400} height={515} priority className="hero-portrait" />
@@ -245,13 +345,17 @@ export default function Home() {
                 </button>
                 <div id={'skill-detail-' + index} className="skill-detail-panel" hidden={!isOpen}>
                   <p>{skill.more}</p>
-                  <span className="skill-projects-label">{t.skillProjectsLabel}</span>
-                  <div className="skill-project-links">
-                    {skillProjectRefs[index].map((projectKey) => {
-                      const project = projectItems.find((item) => item.key === projectKey);
-                      return project?.repo ? <a href={project.repo} target="_blank" rel="noreferrer" key={projectKey}>{t.projectNames[projectKey]}</a> : null;
-                    })}
-                  </div>
+                  {skillProjectRefs[index].length > 0 && (
+                    <>
+                      <span className="skill-projects-label">{t.skillProjectsLabel}</span>
+                      <div className="skill-project-links">
+                        {skillProjectRefs[index].map((projectKey) => {
+                          const project = projectItems.find((item) => item.key === projectKey);
+                          return project?.repo ? <a href={project.repo} target="_blank" rel="noopener noreferrer" key={projectKey}>{t.projectNames[projectKey]}</a> : null;
+                        })}
+                      </div>
+                    </>
+                  )}
                 </div>
                 <span className="skill-card-line" />
               </article>
@@ -287,6 +391,32 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="experience-section" id="experience">
+        <div className="section-wrap">
+          <div className="experience-heading">
+            <div className="section-kicker">{t.experienceTag}</div>
+            <h2>{t.experienceTitle}</h2>
+            <p>{t.experienceIntro}</p>
+          </div>
+          <article className="founder-card">
+            <div className="founder-card-top"><span>{t.founderRole}</span><span>{t.founderPeriod}</span></div>
+            <p>{t.founderDescription}</p>
+          </article>
+          <div className="employment-block">
+            <h3>{t.employmentTitle}</h3>
+            <div className="employment-grid">
+              {t.employment.map((item) => (
+                <article className="employment-item" key={`${item.dates}-${item.company}`}>
+                  <strong>{item.dates}</strong>
+                  <span>{item.role}</span>
+                  <small>{item.company}</small>
+                </article>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="section-wrap projects-section" id="projects">
         <div className="projects-heading">
           <div>
@@ -300,9 +430,9 @@ export default function Home() {
         <div className="project-grid">
           {projectItems.map((project, index) => (
             <article className={`project-card project-${project.visual}`} key={project.key}>
-              <a className="project-image-link" href={project.live} target="_blank" rel="noreferrer" aria-label={`${t.projectNames[project.key]} - ${t.projectLink}`}>
+              <a className="project-image-link" href={project.live} target="_blank" rel="noopener noreferrer" aria-label={`${t.projectNames[project.key]} — ${t.projectLink}`}>
                 {project.visual === 'sejoura' ? (
-                  <Image src="/projects/sejoura-dashboard.jpg" alt="Aperçu du tableau de bord de Séjoura" fill sizes="(max-width: 700px) 90vw, (max-width: 1050px) 44vw, 24vw" className="project-image" />
+                  <Image src="/projects/sejoura-dashboard.jpg" alt={lang === 'fr' ? 'Capture du tableau de bord de Séjoura' : 'Screenshot of the Séjoura dashboard'} fill sizes="(max-width: 700px) 90vw, (max-width: 1050px) 44vw, 24vw" className="project-image" />
                 ) : project.visual === 'trouvetou' ? (
                   <div className="project-art trouvetou-art"><span className="art-overline">TROUVETOU</span><Image src="/projects/trouvetou-logo.png" alt="" width={900} height={313} className="trouvetou-logo" /><span className="art-caption">DISCOVER · CONNECT · EXPLORE</span></div>
                 ) : project.visual === 'transora' ? (
@@ -312,7 +442,7 @@ export default function Home() {
                     <span className="art-index">01 / TRAVEL PLATFORM</span>
                   </div>
                 ) : project.visual === 'schooly' ? (
-                  <Image src="/projects/schooly-dashboard.svg" alt={lang === 'fr' ? 'Illustration du tableau de bord Schooly : inscriptions, reservations et places par niveau' : 'Illustration of the Schooly dashboard: applications, reservations and seats by grade'} fill sizes="(max-width: 700px) 90vw, (max-width: 1050px) 44vw, 24vw" className="project-image" />
+                  <Image src="/projects/schooly-dashboard.svg" alt={lang === 'fr' ? 'Illustration du tableau de bord Schooly : admissions, demandes et places par niveau' : 'Illustration of the Schooly dashboard: admissions, requests and seats by grade'} fill sizes="(max-width: 700px) 90vw, (max-width: 1050px) 44vw, 24vw" className="project-image" />
                 ) : (
                   <div className="project-art control-art" aria-hidden="true"><div className="control-topbar"><span>REFONTIQ</span><i /><i /><i /></div><div className="control-layout"><div className="control-rail"><b /><b /><b /><b /></div><div className="control-dashboard"><span /><span /><span /><div className="control-chart"><i /><i /><i /><i /><i /><i /></div><div className="control-table"><i /><i /><i /></div></div></div></div>
                 )}
@@ -323,8 +453,13 @@ export default function Home() {
                 <div className="project-meta"><span>{t.projectStatus[project.key]}</span><span>0{index + 1}</span></div>
                 <h3>{t.projectNames[project.key]}</h3>
                 <p>{t.projectDescriptions[project.key]}</p>
+                <div className="project-proof">
+                  <div><span>{t.audienceLabel}</span><p>{t.projectAudiences[project.key]}</p></div>
+                  <div><span>{t.featuresLabel}</span><p>{t.projectFeatures[project.key]}</p></div>
+                  <div><span>{t.contributionLabel}</span><p>{t.projectContributions[project.key]}</p></div>
+                </div>
                 <div className="project-tags">{t.projectTags[project.key].map((tag) => <span key={tag}>{tag}</span>)}</div>
-                <div className="project-actions"><a className="repo-link" href={project.live} target="_blank" rel="noreferrer">{t.projectLink}<ArrowUpRight size={14} /></a>{project.repo && <a className="repo-link source-link" href={project.repo} target="_blank" rel="noreferrer">{t.sourceLink}<Github size={13} /></a>}</div>
+                <div className="project-actions"><a className="repo-link" href={project.live} target="_blank" rel="noopener noreferrer">{t.projectLink}<ArrowUpRight size={14} /></a>{project.repo && <a className="repo-link source-link" href={project.repo} target="_blank" rel="noopener noreferrer">{t.sourceLink}<Github size={13} /></a>}</div>
               </div>
             </article>
           ))}
@@ -341,17 +476,18 @@ export default function Home() {
         </div>
         <a className="button-contact" href="mailto:dukouas@gmail.com">{t.emailAction}<ArrowRight size={16} /></a>
       </section>
+      </main>
 
       <footer className="footer">
-        <a className="brand" href="#home">S<span>.</span></a>
+        <a className="brand" href="#home" aria-label={lang === 'fr' ? 'Retour à l’accueil' : 'Back to home'}>S<span>.</span></a>
         <span>{t.footerLine}</span>
         <div className="footer-socials">
-          <a href="https://github.com/refontiq-dotcom" target="_blank" rel="noreferrer" aria-label="GitHub"><Github size={16} /></a>
-          <a href="https://www.linkedin.com/in/samuel-dukoua-maintenant" target="_blank" rel="noreferrer" aria-label="LinkedIn"><Linkedin size={16} /></a>
+          <a href="https://github.com/refontiq-dotcom" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><Github size={16} /></a>
+          <a href="https://www.linkedin.com/in/samuel-dukoua-maintenant" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><Linkedin size={16} /></a>
           <a href="mailto:dukouas@gmail.com" aria-label="E-mail"><Mail size={16} /></a>
         </div>
         <small>© {new Date().getFullYear()} Dukoua Nguessan Samuel Junior. {t.rights}</small>
       </footer>
-    </main>
+    </>
   );
 }
